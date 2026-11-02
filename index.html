@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INDUS Industrial Robotics — 100 Professional Email Template Library</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F8FAFC;
+      --surface: #FFFFFF;
+      --navy: #101B2D;
+      --navy-light: #16243A;
+      --blue: #155EEF;
+      --blue-hover: #0E4BCA;
+      --cyan: #16C7E8;
+      --green: #10B981;
+      --border: #E2E8F0;
+      --border-dark: #1E293B;
+      --text: #0F172A;
+      --text-muted: #64748B;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+    
+    /* HEADER */
+    .top-strip {
+      background-color: #0B1320;
+      border-bottom: 1px solid var(--border-dark);
+      padding: 8px 24px;
+      font-size: 11.5px;
+      font-family: var(--font-mono);
+      color: #94A3B8;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .top-strip .cert {
+      color: var(--green);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .top-strip .cert-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: var(--green);
+      box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+    }
+    
+    .header-main {
+      background: linear-gradient(135deg, #101B2D 0%, #16243A 100%);
+      color: #FFFFFF;
+      padding: 36px 32px;
+      border-bottom: 1px solid var(--border-dark);
+    }
+    .header-inner {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .brand-icon {
+      width: 52px;
+      height: 52px;
+      background: #EFF6FF;
+      border: 2px solid var(--blue);
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      color: var(--blue);
+      font-size: 26px;
+      font-weight: 900;
+      box-shadow: 0 4px 14px rgba(21, 94, 239, 0.25);
+    }
+    .brand-text h1 {
+      font-size: 26px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+    }
+    .brand-text h1 span {
+      color: var(--cyan);
+    }
+    .brand-text p {
+      font-size: 13px;
+      color: #94A3B8;
+      font-weight: 500;
+      margin-top: 4px;
+    }
+    
+    /* STATS BAR */
+    .stats-bar {
+      background-color: #FFFFFF;
+      border-bottom: 1px solid var(--border);
+      padding: 18px 32px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    }
+    .stats-inner {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 16px;
+    }
+    .stat-card {
+      background-color: #F8FAFC;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 16px;
+      display: flex;
+      flex-direction: column;
+    }
+    .stat-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .stat-val {
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--navy);
+      margin-top: 4px;
+      font-family: var(--font-mono);
+    }
+    .stat-card.active-total {
+      background: #EFF6FF;
+      border-color: #BFDBFE;
+    }
+    .stat-card.active-total .stat-val {
+      color: var(--blue);
+    }
+    
+    /* CONTROLS (SEARCH & FILTERS) */
+    .controls-bar {
+      max-width: 1440px;
+      margin: 24px auto 0 auto;
+      padding: 0 32px;
+    }
+    .controls-inner {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.03);
+    }
+    .search-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+    .search-input-wrap {
+      flex: 1;
+      min-width: 280px;
+      position: relative;
+    }
+    .search-input-wrap input {
+      width: 100%;
+      height: 44px;
+      padding: 0 16px 0 42px;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      font-size: 14px;
+      font-family: var(--font-sans);
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .search-input-wrap input:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(21, 94, 239, 0.15);
+    }
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #94A3B8;
+      font-size: 16px;
+    }
+    .select-wrap select {
+      height: 44px;
+      padding: 0 36px 0 14px;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      font-size: 13.5px;
+      font-family: var(--font-sans);
+      background-color: #FFFFFF;
+      outline: none;
+      cursor: pointer;
+      color: var(--text);
+    }
+    .select-wrap select:focus {
+      border-color: var(--blue);
+    }
+    
+    /* CATEGORY PILLS */
+    .category-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .pill-btn {
+      padding: 7px 14px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      border: 1px solid var(--border);
+      background: #F8FAFC;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .pill-btn:hover {
+      background: #F1F5F9;
+      color: var(--text);
+    }
+    .pill-btn.active {
+      background: var(--blue);
+      color: #FFFFFF;
+      border-color: var(--blue);
+      box-shadow: 0 2px 8px rgba(21, 94, 239, 0.25);
+    }
+    
+    /* TEMPLATE GRID */
+    .grid-container {
+      max-width: 1440px;
+      margin: 24px auto 48px auto;
+      padding: 0 32px;
+    }
+    .results-count {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    .templates-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 20px;
+    }
+    
+    /* TEMPLATE CARD */
+    .template-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    }
+    .template-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(16, 27, 45, 0.06);
+      border-color: #BFDBFE;
+    }
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .card-id {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--blue);
+      background: #EFF6FF;
+      border: 1px solid #DBEAFE;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+    .card-category-tag {
+      font-size: 11px;
+      font-weight: 700;
+      color: #475467;
+      background: #F1F5F9;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+    .card-title {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1.35;
+      margin-bottom: 8px;
+    }
+    .card-subject {
+      font-size: 12.5px;
+      color: var(--text);
+      font-weight: 600;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    .card-subject span {
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+    .card-obj {
+      font-size: 12px;
+      color: #64748B;
+      line-height: 1.45;
+      margin-bottom: 14px;
+      flex-grow: 1;
+    }
+    .card-audience {
+      font-size: 11px;
+      color: #475467;
+      background: #F8FAFC;
+      border: 1px dashed var(--border);
+      border-radius: 6px;
+      padding: 6px 10px;
+      margin-bottom: 16px;
+    }
+    .card-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: auto;
+    }
+    .btn {
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 12.5px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-primary {
+      background: var(--blue);
+      color: #FFFFFF;
+      border: 1px solid var(--blue);
+      flex: 1;
+    }
+    .btn-primary:hover {
+      background: var(--blue-hover);
+    }
+    .btn-outline {
+      background: #FFFFFF;
+      color: var(--text);
+      border: 1.5px solid var(--border);
+    }
+    .btn-outline:hover {
+      background: #F8FAFC;
+      border-color: #CBD5E1;
+    }
+    
+    /* PREVIEW MODAL */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(16, 27, 45, 0.75);
+      backdrop-filter: blur(4px);
+      z-index: 1000;
+      place-items: center;
+      padding: 20px;
+    }
+    .modal-overlay.open {
+      display: grid;
+    }
+    .modal-window {
+      background: #FFFFFF;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 1100px;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+    .modal-header {
+      background: var(--navy);
+      color: #FFFFFF;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-dark);
+    }
+    .modal-title-wrap h3 {
+      font-size: 16px;
+      font-weight: 800;
+    }
+    .modal-title-wrap p {
+      font-size: 11.5px;
+      color: #94A3B8;
+      font-family: var(--font-mono);
+      margin-top: 2px;
+    }
+    .modal-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .view-toggle {
+      background: var(--navy-light);
+      border: 1px solid #2A3C56;
+      border-radius: 6px;
+      padding: 3px;
+      display: flex;
+    }
+    .view-btn {
+      background: transparent;
+      border: none;
+      color: #94A3B8;
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .view-btn.active {
+      background: var(--blue);
+      color: #FFFFFF;
+    }
+    .close-modal-btn {
+      background: #1E293B;
+      border: none;
+      color: #FFFFFF;
+      font-size: 18px;
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+    }
+    .close-modal-btn:hover {
+      background: #334155;
+    }
+    
+    .modal-toolbar {
+      background: #F8FAFC;
+      border-bottom: 1px solid var(--border);
+      padding: 10px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      font-size: 12px;
+    }
+    .quick-copy-btns {
+      display: flex;
+      gap: 8px;
+    }
+    .copy-pill {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-size: 11.5px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text);
+    }
+    .copy-pill:hover {
+      background: #EFF6FF;
+      border-color: #BFDBFE;
+      color: var(--blue);
+    }
+    .copy-pill.copied {
+      background: #ECFDF5;
+      border-color: #A7F3D0;
+      color: var(--green);
+    }
+    
+    .modal-body {
+      flex: 1;
+      background: #E2E8F0;
+      overflow-y: auto;
+      display: flex;
+      justify-content: center;
+      padding: 24px;
+    }
+    .preview-frame-container {
+      width: 100%;
+      max-width: 650px;
+      height: 100%;
+      background: #FFFFFF;
+      border-radius: 8px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: max-width 0.3s;
+    }
+    .preview-frame-container.mobile-mode {
+      max-width: 390px;
+    }
+    .preview-frame {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    
+    @media (max-width: 768px) {
+      .top-strip { display: none; }
+      .header-main { padding: 24px 16px; }
+      .stats-bar { padding: 16px; }
+      .controls-bar { padding: 0 16px; }
+      .grid-container { padding: 0 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP CERTIFICATION STRIP -->
+  <div class="top-strip">
+    <div class="cert">
+      <span class="cert-dot"></span>
+      ISO 9001:2015 CERTIFIED • DIN 3990 &amp; ISO 9283 VERIFIED STANDARDS
+    </div>
+    <div>
+      Direct Engineering: <a href="tel:+919444024848" style="color: #FFFFFF; font-weight: 700;">+91 94440 24848</a> | 
+      <a href="mailto:engineering@indus-robotics.com" style="color: var(--cyan);">engineering@indus-robotics.com</a>
+    </div>
+  </div>
+
+  <!-- MAIN HEADER -->
+  <header class="header-main">
+    <div class="header-inner">
+      <div class="brand-wrap">
+        <div class="brand-icon">❖</div>
+        <div class="brand-text">
+          <h1>INDUS <span>ROBOTICS</span></h1>
+          <p>100 Professional HTML Email Template Library &bull; Master B2B Marketing Suite</p>
+        </div>
+      </div>
+      <div style="text-align: right;">
+        <a href="README.md" class="btn btn-outline" style="color:#FFF; border-color:#2A3C56; background:#16243A;" target="_blank">
+          📄 Read Documentation
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- STATISTICS BAR -->
+  <section class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-card active-total">
+        <span class="stat-label">Total Templates</span>
+        <span class="stat-val" id="stat-total">100</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Product Marketing</span>
+        <span class="stat-val">36</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Engineering Services</span>
+        <span class="stat-val">21</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Digital Tools</span>
+        <span class="stat-val">8</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Commercial Opps</span>
+        <span class="stat-val">12</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Partnerships &amp; OEM</span>
+        <span class="stat-val">11</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Careers &amp; Talent</span>
+        <span class="stat-val">12</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTROLS BAR (SEARCH & FILTERS) -->
+  <section class="controls-bar">
+    <div class="controls-inner">
+      <div class="search-row">
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="Search by template name, ID (e.g. INDUS-EMAIL-001), subject, or keyword...">
+        </div>
+        <div class="select-wrap">
+          <select id="audienceFilter">
+            <option value="all">All Target Audiences</option>
+            <option value="Engineers">Engineers &amp; Designers</option>
+            <option value="Managers">Managers &amp; Directors</option>
+            <option value="Integrator">System Integrators</option>
+            <option value="OEM">Machine Builders / OEMs</option>
+            <option value="Candidates">Job Candidates / Talent</option>
+          </select>
+        </div>
+        <div class="select-wrap">
+          <select id="sortSelect">
+            <option value="id-asc">Sort by ID (Ascending)</option>
+            <option value="id-desc">Sort by ID (Descending)</option>
+            <option value="title-asc">Sort by Title (A - Z)</option>
+            <option value="category">Sort by Category</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- CATEGORY PILLS -->
+      <div class="category-pills" id="categoryPills">
+        <button class="pill-btn active" data-cat="all">All Categories (100)</button>
+        <button class="pill-btn" data-cat="01-PRODUCT-MARKETING">Product Marketing (36)</button>
+        <button class="pill-btn" data-cat="02-ENGINEERING-SERVICES">Engineering Services (21)</button>
+        <button class="pill-btn" data-cat="03-DIGITAL-TOOLS">Digital Tools (8)</button>
+        <button class="pill-btn" data-cat="04-COMMERCIAL-OPPORTUNITIES">Commercial Opportunities (12)</button>
+        <button class="pill-btn" data-cat="05-PARTNERSHIPS-OEM">Partnerships &amp; OEM (11)</button>
+        <button class="pill-btn" data-cat="06-CAREERS-TALENT">Careers &amp; Talent (12)</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEMPLATE GRID -->
+  <main class="grid-container">
+    <div class="results-count" id="resultsCount">Showing 100 templates</div>
+    <div class="templates-grid" id="templatesGrid">
+      <!-- Dynamic cards injected via JavaScript -->
+    </div>
+  </main>
+
+  <!-- INTERACTIVE PREVIEW MODAL -->
+  <div class="modal-overlay" id="previewModal">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <h3 id="modalTitle">Template Preview</h3>
+          <p id="modalSub">INDUS-EMAIL-001 &bull; precision-reducers</p>
+        </div>
+        <div class="modal-actions">
+          <div class="view-toggle">
+            <button class="view-btn active" id="btnDesktopView" onclick="setPreviewMode('desktop')">Desktop (640px)</button>
+            <button class="view-btn" id="btnMobileView" onclick="setPreviewMode('mobile')">Mobile (375px)</button>
+          </div>
+          <button class="close-modal-btn" onclick="closeModal()">✕</button>
+        </div>
+      </div>
+
+      <div class="modal-toolbar">
+        <div class="quick-copy-btns">
+          <button class="copy-pill" id="btnCopySubject" onclick="copySubject()">
+            📋 Copy Subject Line
+          </button>
+          <button class="copy-pill" id="btnCopyPreview" onclick="copyPreview()">
+            💬 Copy Preview Text
+          </button>
+          <button class="copy-pill" id="btnCopyHtml" onclick="copyFullHtml()">
+            &lt;/&gt; Copy Full HTML
+          </button>
+        </div>
+        <div>
+          <button class="copy-pill" onclick="printPreview()">🖨️ Print Preview</button>
+          <a href="#" id="modalOpenTabLink" target="_blank" class="copy-pill" style="display:inline-flex;">
+            ↗ Open in New Tab
+          </a>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="preview-frame-container" id="frameContainer">
+          <iframe src="" class="preview-frame" id="previewFrame"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Embedded template dataset
+    const TEMPLATES_DATA = [{"id": "INDUS-EMAIL-001", "num": 1, "title": "Zero-Backlash Strain-Wave Reducer Introduction", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "precision-reducers", "subcategory_title": "Precision Reducers & Gearboxes", "audience": "Mechanical Engineers, Robotics Joint Designers, Kinematic Architects", "objective": "Introduce ultra-compact zero-backlash strain-wave gearheads for collaborative and articulated robot arms.", "subject": "Zero-Backlash Precision: New INDUS Strain-Wave Reducer Series for Robotic Joints", "preview": "Sub-arcminute lost motion, hollow-shaft cable routing, and 30% higher torque density for compact articulated joints.", "badge": "New Release", "rel_path": "01-PRODUCT-MARKETING/precision-reducers/INDUS-EMAIL-001.html"}, {"id": "INDUS-EMAIL-002", "num": 2, "title": "High-Torque RV Cycloidal Reducer Technical Specification", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "precision-reducers", "subcategory_title": "Precision Reducers & Gearboxes", "audience": "Heavy Automation Machine Builders, Machine Tool Integrators, Mechanical Designers", "objective": "Announce full technical specifications and torsional shock ratings for the INDUS RV Cycloidal Reducer series.", "subject": "Technical Release: INDUS RV Cycloidal Reducers with 500% Shock Overload Rating", "preview": "Extreme torsional rigidity, dual-pin cycloidal gearing, and high radial load capacity for heavy industrial robot axes.", "badge": "Technical Release", "rel_path": "01-PRODUCT-MARKETING/precision-reducers/INDUS-EMAIL-002.html"}, {"id": "INDUS-EMAIL-003", "num": 3, "title": "Precision Planetary Gearheads Customer Application & Machine Case Study", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "precision-reducers", "subcategory_title": "Precision Reducers & Gearboxes", "audience": "Automotive Workcell Engineers, Packaging Line Developers, System Integrators", "objective": "Share customer application results showing 98% efficiency and zero backlash in automotive spot welding turntable indexing.", "subject": "Case Study: 42% Cycle-Time Reduction in Automotive Turntables with INDUS Planetary Reducers", "preview": "Learn how Tier-1 automotive integrators achieved sub-millimeter indexing repeatability with INDUS helical planetary gearheads.", "badge": "Case Study", "rel_path": "01-PRODUCT-MARKETING/precision-reducers/INDUS-EMAIL-003.html"}, {"id": "INDUS-EMAIL-004", "num": 4, "title": "INDUS 6-Axis Articulated Heavy Payload Industrial Robot Launch", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "robotic-systems", "subcategory_title": "Robotic Systems", "audience": "Plant Managers, Automation Directors, Welding & Material Handling Engineers", "objective": "Announce the official launch of the INDUS heavy-payload 6-axis industrial robot arm with \u00b10.03 mm repeatability.", "subject": "Launch Announcement: INDUS 6-Axis Industrial Robots (165 kg Payload, \u00b10.03 mm Repeatability)", "preview": "Discover high-rigidity kinematic kinematics, hollow wrist design, and open EtherCAT control for heavy manufacturing.", "badge": "Major Launch", "rel_path": "01-PRODUCT-MARKETING/robotic-systems/INDUS-EMAIL-004.html"}, {"id": "INDUS-EMAIL-005", "num": 5, "title": "Collaborative Robot (Cobot) Series Introduction", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "robotic-systems", "subcategory_title": "Robotic Systems", "audience": "Manufacturing Engineers, Assembly Automation Managers, Safety Officers", "objective": "Introduce the INDUS lightweight collaborative robot series with ISO 10218-1 and ISO/TS 15066 safety compliance.", "subject": "Introducing INDUS Collaborative Robots: Safe, Intuitive & High-Precision Assembly", "preview": "ISO/TS 15066 compliant power-force limiting, hand-guide teaching, and \u00b10.02 mm repeatability for flexible assembly.", "badge": "New Release", "rel_path": "01-PRODUCT-MARKETING/robotic-systems/INDUS-EMAIL-005.html"}, {"id": "INDUS-EMAIL-006", "num": 6, "title": "High-Speed Delta & SCARA Robotic Packaging Application", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "robotic-systems", "subcategory_title": "Robotic Systems", "audience": "Packaging Engineers, Food & Beverage Processors, Pharmaceutical Production Leads", "objective": "Highlight high-speed pick-and-place capabilities with INDUS Delta and SCARA robots reaching 180 picks/min.", "subject": "High-Speed Packaging: 180 Picks/Min with INDUS Delta & SCARA Robots", "preview": "Ultra-fast delta kinematics, IP69K washdown sanitation, and integrated vision tracking for food and pharma lines.", "badge": "Application Guide", "rel_path": "01-PRODUCT-MARKETING/robotic-systems/INDUS-EMAIL-006.html"}, {"id": "INDUS-EMAIL-007", "num": 7, "title": "Industrial Autonomous Mobile Robot (AMR) Platform Introduction", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "autonomous-mobility", "subcategory_title": "Autonomous Mobility Systems", "audience": "Logistics Managers, Plant Operations Directors, Material Flow Engineers", "objective": "Introduce the INDUS heavy-payload industrial AMR series with natural feature LiDAR SLAM navigation.", "subject": "Introducing INDUS Industrial AMRs: 1,500 kg Payload with LiDAR SLAM Navigation", "preview": "Natural contour navigation, dynamic obstacle avoidance, and certified ISO 3691-4 industrial safety.", "badge": "New Release", "rel_path": "01-PRODUCT-MARKETING/autonomous-mobility/INDUS-EMAIL-007.html"}, {"id": "INDUS-EMAIL-008", "num": 8, "title": "Automated Guided Vehicle (AGV) Heavy Material Handling Solutions", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "autonomous-mobility", "subcategory_title": "Autonomous Mobility Systems", "audience": "Automotive Body-in-White Leads, Foundry Operations, Heavy Assembly Engineers", "objective": "Showcase heavy-duty magnetic and optical guided AGVs designed for continuous 24/7 assembly line transport.", "subject": "Heavy Material Handling: INDUS Automated Guided Vehicles for 24/7 Production", "preview": "Deterministic route following, sub-millimeter stop accuracy, and high durability for automotive body transport.", "badge": "Solutions Guide", "rel_path": "01-PRODUCT-MARKETING/autonomous-mobility/INDUS-EMAIL-008.html"}, {"id": "INDUS-EMAIL-009", "num": 9, "title": "Warehouse & Intralogistics Mobility Solutions", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "autonomous-mobility", "subcategory_title": "Autonomous Mobility Systems", "audience": "Warehouse Directors, Fulfillment Engineering Leads, Intralogistics Specialists", "objective": "Present scalable warehouse mobility architectures including ASRS shuttles, carton runners, and pallet movers.", "subject": "Scale Warehouse Throughput: INDUS Integrated Intralogistics Mobility", "preview": "ASRS interface shuttles, high-speed carton runners, and multi-agent fleet dispatch for dynamic fulfillment.", "badge": "Case Analysis", "rel_path": "01-PRODUCT-MARKETING/autonomous-mobility/INDUS-EMAIL-009.html"}, {"id": "INDUS-EMAIL-010", "num": 10, "title": "Precision Ground Ball Screw Linear Actuators Introduction", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "linear-motion", "subcategory_title": "Linear Motion Systems", "audience": "Automation Designers, Machine Tool Builders, Actuator Engineers", "objective": "Introduce precision ground C3/C5 ball screw electric actuators designed for demanding thrust and position repeatability.", "subject": "New Release: INDUS Precision Ground Ball Screw Linear Actuators", "preview": "C3/C5 ground screws, rigid extruded aluminum profiles, and sub-micron positioning repeatability up to 2.5m stroke.", "badge": "New Release", "rel_path": "01-PRODUCT-MARKETING/linear-motion/INDUS-EMAIL-010.html"}, {"id": "INDUS-EMAIL-011", "num": 11, "title": "Multi-Axis Cartesian Gantry Solutions for High-Speed Dispensing & Assembly", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "linear-motion", "subcategory_title": "Linear Motion Systems", "audience": "Electronics Assembly Leads, Dispensing Machine Builders, Robotic Workcell Designers", "objective": "Present multi-axis Cartesian gantry architectures optimized for glue dispensing, screwdriving, and tray sorting.", "subject": "Multi-Axis Cartesian Gantries: High-Speed Precision Dispensing & Assembly", "preview": "Engineered X-Y-Z kinematics, sub-0.01 mm repeatability, and plug-and-play servo control for cleanrooms.", "badge": "Systems Guide", "rel_path": "01-PRODUCT-MARKETING/linear-motion/INDUS-EMAIL-011.html"}, {"id": "INDUS-EMAIL-012", "num": 12, "title": "Micron-Level Direct-Drive Linear Positioning Stages for Semiconductor Metrology", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "linear-motion", "subcategory_title": "Linear Motion Systems", "audience": "Semiconductor Tool Developers, Optical Metrology Engineers, Nanotechnology Researchers", "objective": "Introduce ironless direct-drive linear motor stages providing nanometer-scale resolution for wafer inspection.", "subject": "Sub-Micron Metrology: INDUS Direct-Drive Ironless Linear Positioning Stages", "preview": "Zero cogging, nanometer encoder resolution, and ultra-flat granite stages for semiconductor wafer inspection.", "badge": "Technical Release", "rel_path": "01-PRODUCT-MARKETING/linear-motion/INDUS-EMAIL-012.html"}, {"id": "INDUS-EMAIL-013", "num": 13, "title": "Smart Servo-Electric Parallel Gripper Launch", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "end-effectors", "subcategory_title": "End Effectors & Tooling", "audience": "Robot Tooling Specialists, Automation Integration Engineers, Assembly Leads", "objective": "Announce the launch of smart servo-electric parallel grippers with programmable force (10N-500N) and millimeter stroke feedback.", "subject": "Launch: INDUS Smart Servo-Electric Grippers with 10N\u2013500N Programmable Force", "preview": "Precise force feedback, digital stroke positioning, and integrated IO-Link/EtherCAT communication.", "badge": "New Release", "rel_path": "01-PRODUCT-MARKETING/end-effectors/INDUS-EMAIL-013.html"}, {"id": "INDUS-EMAIL-014", "num": 14, "title": "Multi-Chamber Vacuum Picking Solutions for Fragile Glass & Solar Cells", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "end-effectors", "subcategory_title": "End Effectors & Tooling", "audience": "Solar Panel Manufacturers, Display Glass Engineers, Packaging Integrators", "objective": "Showcase multi-chamber non-marking vacuum picking end effectors designed for delicate silicon wafers and thin glass.", "subject": "Delicate Handling: INDUS Multi-Chamber Vacuum End Effectors", "preview": "Non-marking silicone suction, integrated vacuum ejectors, and instantaneous release for thin wafer handling.", "badge": "Solutions Guide", "rel_path": "01-PRODUCT-MARKETING/end-effectors/INDUS-EMAIL-014.html"}, {"id": "INDUS-EMAIL-015", "num": 15, "title": "High-Cycle Automatic Robotic Tool Changer Systems", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "end-effectors", "subcategory_title": "End Effectors & Tooling", "audience": "Automotive Spot Welding Engineers, CNC Machining Leads, Flexible Workcell Integrators", "objective": "Introduce high-cycle automatic robotic tool changers with failsafe ball-locking mechanisms and pneumatic/signal pass-through.", "subject": "Zero Downtime: INDUS High-Cycle Automatic Robotic Tool Changers", "preview": "Failsafe pneumatic ball locking, 100,000+ changeover cycles, and high-current/EtherCAT electrical modules.", "badge": "Technical Release", "rel_path": "01-PRODUCT-MARKETING/end-effectors/INDUS-EMAIL-015.html"}, {"id": "INDUS-EMAIL-016", "num": 16, "title": "Dual-Absolute Hollow-Shaft Rotary Optical Encoders", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "sensors-feedback", "subcategory_title": "Sensors & Feedback", "audience": "Servo Motor Designers, Robotics Kinematic Specialists, Drive Engineers", "objective": "Introduce high-resolution dual-absolute hollow-shaft optical encoders providing 21-bit single-turn and 16-bit multi-turn accuracy.", "subject": "Sub-Arcsecond Precision: INDUS Dual-Absolute Hollow-Shaft Rotary Encoders", "preview": "21-bit optical resolution, true battery-free multi-turn tracking, and large through-bore aperture for robot joints.", "badge": "New Release", "rel_path": "01-PRODUCT-MARKETING/sensors-feedback/INDUS-EMAIL-016.html"}, {"id": "INDUS-EMAIL-017", "num": 17, "title": "6-Axis Force/Torque Sensing Solutions for Precision Assembly & Contour Deburring", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "sensors-feedback", "subcategory_title": "Sensors & Feedback", "audience": "Robotics Process Engineers, Finishing & Polishing Leads, Assembly System Integrators", "objective": "Present multi-axis force/torque sensors delivering sub-0.1 N sensitivity for robotic deburring, contour following, and precision insertion.", "subject": "Real-Time Tactile Feedback: INDUS 6-Axis Force/Torque Sensors", "preview": "Sub-0.1 N force sensitivity, silicon strain-gauge technology, and high overload protection for robotic deburring.", "badge": "Solutions Guide", "rel_path": "01-PRODUCT-MARKETING/sensors-feedback/INDUS-EMAIL-017.html"}, {"id": "INDUS-EMAIL-018", "num": 18, "title": "Rugged Inductive & Laser Proximity Sensing for Harsh Industrial Workcells", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "sensors-feedback", "subcategory_title": "Sensors & Feedback", "audience": "Electrical Controls Engineers, Maintenance Managers, Industrial Automation Leads", "objective": "Introduce heavy-duty inductive, capacitive, and laser distance proximity sensors rated IP68/IP69K for foundry and welding cells.", "subject": "Harsh Environment Sensing: INDUS IP69K Proximity & Distance Sensors", "preview": "Weld-slag immune inductive sensors, sub-micron laser triangulation, and IP69K stainless-steel housings.", "badge": "New Release", "rel_path": "01-PRODUCT-MARKETING/sensors-feedback/INDUS-EMAIL-018.html"}, {"id": "INDUS-EMAIL-019", "num": 19, "title": "High-Resolution 2D/3D Industrial Machine Vision Cameras Introduction", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "machine-vision", "subcategory_title": "Machine Vision & Imaging", "audience": "Vision Engineers, Quality Directors, Automation Systems Architects", "objective": "Introduce high-resolution GigE Vision and USB3 industrial cameras with global shutter sensors and on-board FPGA processing.", "subject": "Crystal-Clear Inspection: INDUS Industrial 2D/3D Machine Vision Cameras", "preview": "Global shutter CMOS sensors, ultra-fast GigE Vision streaming, and embedded pre-processing for automated inspection.", "badge": "New Release", "rel_path": "01-PRODUCT-MARKETING/machine-vision/INDUS-EMAIL-019.html"}, {"id": "INDUS-EMAIL-020", "num": 20, "title": "3D Structured Light Inspection & In-Line Dimensional Metrology Solutions", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "machine-vision", "subcategory_title": "Machine Vision & Imaging", "audience": "Metrology Engineers, Quality Assurance Managers, Aerospace Assembly Leads", "objective": "Present 3D structured light vision systems for micron-level point-cloud inspection, gap-and-flush analysis, and weld seam tracking.", "subject": "Micron 3D Metrology: INDUS In-Line Structured Light Vision Systems", "preview": "Sub-10 micron depth resolution, million-point point clouds in 100 ms, and automated CAD deviation mapping.", "badge": "Solutions Guide", "rel_path": "01-PRODUCT-MARKETING/machine-vision/INDUS-EMAIL-020.html"}, {"id": "INDUS-EMAIL-021", "num": 21, "title": "Edge AI-Powered Visual Guidance for Random Robotic Bin-Picking", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "machine-vision", "subcategory_title": "Machine Vision & Imaging", "audience": "Automation System Integrators, Robotics Application Engineers, Foundry Leads", "objective": "Showcase AI visual guidance software and 3D vision hardware for collision-free random bin-picking of overlapping parts.", "subject": "Conquer Random Bin-Picking: INDUS Edge AI 3D Vision Guidance", "preview": "Deep-learning point-cloud segmentation, collision-free grasp generation, and 1.2-second cycle times.", "badge": "Case Analysis", "rel_path": "01-PRODUCT-MARKETING/machine-vision/INDUS-EMAIL-021.html"}, {"id": "INDUS-EMAIL-022", "num": 22, "title": "Multi-Axis Kinematic Robot Controller Launch", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "robot-controllers", "subcategory_title": "Robot & Motion Controllers", "audience": "Controls Engineers, Robotics OEM Developers, System Integrators", "objective": "Announce the official launch of the INDUS multi-axis kinematic robot controller supporting up to 64 coordinated axes.", "subject": "Launch: INDUS Next-Gen Multi-Axis Kinematic Robot Controller (64 Axes)", "preview": "Hard real-time Linux kernel, deterministic 250 \u00b5s servo loops, and integrated kinematic transforms for any robot topology.", "badge": "Major Launch", "rel_path": "01-PRODUCT-MARKETING/robot-controllers/INDUS-EMAIL-022.html"}, {"id": "INDUS-EMAIL-023", "num": 23, "title": "High-Speed EtherCAT Real-Time Motion Control Platform", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "robot-controllers", "subcategory_title": "Robot & Motion Controllers", "audience": "Industrial Communications Engineers, Motion Control Specialists, Machine Builders", "objective": "Highlight the deterministic performance and sub-microsecond jitter of the INDUS EtherCAT master motion controller.", "subject": "Deterministic Performance: INDUS High-Speed EtherCAT Motion Control Platform", "preview": "Sub-microsecond bus jitter, distributed clock synchronization, and hot-plug device topology for high-speed machinery.", "badge": "Technical Guide", "rel_path": "01-PRODUCT-MARKETING/robot-controllers/INDUS-EMAIL-023.html"}, {"id": "INDUS-EMAIL-024", "num": 24, "title": "ROS 2 Open-Architecture Robotics Controller Integration Solutions", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "robot-controllers", "subcategory_title": "Robot & Motion Controllers", "audience": "Robotics Researchers, Autonomous Vehicle Developers, Advanced Automation Labs", "objective": "Present native ROS 2 integration capabilities with certified ros2_control hardware drivers for rapid modern deployment.", "subject": "Bridging ROS 2 to Industrial Hardware: INDUS Open-Architecture Controllers", "preview": "Certified ros2_control hardware interface, MoveIt 2 trajectory planning, and real-time EtherCAT bridge.", "badge": "Technical Whitepaper", "rel_path": "01-PRODUCT-MARKETING/robot-controllers/INDUS-EMAIL-024.html"}, {"id": "INDUS-EMAIL-025", "num": 25, "title": "High Torque-Density Frameless BLDC Motors for Compact Robot Joints", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "servo-motors-drives", "subcategory_title": "Servo Drives & Motors", "audience": "Robotics Hardware Designers, Joint Actuator Engineers, Exoskeleton Developers", "objective": "Introduce high-torque frameless brushless torque motors engineered to fit seamlessly inside robotic joint housings.", "subject": "Maximum Torque in Minimal Space: INDUS Frameless BLDC Torque Motors", "preview": "Segmented stator design, high slot-fill factor, and large hollow-bore diameter for compact robot joint actuators.", "badge": "New Release", "rel_path": "01-PRODUCT-MARKETING/servo-motors-drives/INDUS-EMAIL-025.html"}, {"id": "INDUS-EMAIL-026", "num": 26, "title": "Low-Voltage DC & High-Voltage AC Servo Drive Solutions", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "servo-motors-drives", "subcategory_title": "Servo Drives & Motors", "audience": "Electrical Engineers, Drive Specialists, Motion System Integrators", "objective": "Present compact servo drives with Safe Torque Off (STO SIL3 PLe) and dual-loop encoder feedback control.", "subject": "Precision Power: INDUS Low-Voltage DC & High-Voltage AC Servo Drives", "preview": "Integrated Safe Torque Off (SIL3 PLe), dual-loop encoder closing, and compact bookshelf form-factors.", "badge": "Technical Release", "rel_path": "01-PRODUCT-MARKETING/servo-motors-drives/INDUS-EMAIL-026.html"}, {"id": "INDUS-EMAIL-027", "num": 27, "title": "Industrial Dynamic Motion Performance & Fast Step-Response Benchmarks", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "servo-motors-drives", "subcategory_title": "Servo Drives & Motors", "audience": "Motion Tuning Engineers, High-Speed Packaging Specialists, Controls Architects", "objective": "Demonstrate benchmark step-response times and active vibration suppression algorithms for high-speed indexing.", "subject": "Benchmark Performance: Sub-5ms Servo Settling with INDUS Active Notch Filters", "preview": "Eliminate mechanical resonance, achieve sub-5ms step settling, and maximize production line throughput.", "badge": "Technical Whitepaper", "rel_path": "01-PRODUCT-MARKETING/servo-motors-drives/INDUS-EMAIL-027.html"}, {"id": "INDUS-EMAIL-028", "num": 28, "title": "Precision Crossed Roller Bearings Introduction", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "transmission-bearings", "subcategory_title": "Mechanical Transmission & Bearings", "audience": "Mechanical Design Engineers, Rotary Stage Developers, Precision Bearing Specialists", "objective": "Introduce high-rigidity crossed roller bearings supporting simultaneous radial, axial, and overturning moment loads.", "subject": "High Rigidity, Compact Envelope: INDUS Precision Crossed Roller Bearings", "preview": "Cylindrical rollers in alternating 90\u00b0 V-grooves for extreme radial, axial, and tilting moment stiffness.", "badge": "New Release", "rel_path": "01-PRODUCT-MARKETING/transmission-bearings/INDUS-EMAIL-028.html"}, {"id": "INDUS-EMAIL-029", "num": 29, "title": "Precision Rotary Turntable & Indexing Ring Solutions", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "transmission-bearings", "subcategory_title": "Mechanical Transmission & Bearings", "audience": "Welding Cell Integrators, Automation Tooling Designers, Indexer Builders", "objective": "Present heavy-duty precision rotary tables and indexing rings for multi-station assembly and robotic positioners.", "subject": "Heavy-Duty Indexing: INDUS Precision Rotary Turntable Modules", "preview": "High overturning moment stiffness, direct-drive or reducer-driven options, and sub-5 arcsecond repeatability.", "badge": "Solutions Guide", "rel_path": "01-PRODUCT-MARKETING/transmission-bearings/INDUS-EMAIL-029.html"}, {"id": "INDUS-EMAIL-030", "num": 30, "title": "Harmonic Component Sets & Precision Couplings", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "transmission-bearings", "subcategory_title": "Mechanical Transmission & Bearings", "audience": "Robotics Machine Builders, Aerospace Mechanism Designers, Actuator Engineers", "objective": "Introduce modular harmonic gear component sets (cup and silk-hat types) alongside zero-backlash precision couplings.", "subject": "Component-Level Precision: INDUS Harmonic Gear Sets & Couplings", "preview": "Ultra-lightweight cup and hat component sets for custom actuators, paired with zero-backlash disc couplings.", "badge": "Technical Release", "rel_path": "01-PRODUCT-MARKETING/transmission-bearings/INDUS-EMAIL-030.html"}, {"id": "INDUS-EMAIL-031", "num": 31, "title": "Safety PLC & Integrated Safety Logic Controllers", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "robotics-safety", "subcategory_title": "Robotics Safety Systems", "audience": "Functional Safety Engineers, Controls Architects, Workcell Safety Certifiers", "objective": "Introduce scalable industrial Safety PLCs certified to IEC 61508 SIL3 and ISO 13849-1 Category 4 PLe.", "subject": "Certified Safety: INDUS Integrated Safety PLCs (SIL3 / Cat 4 PLe)", "preview": "Dual-microprocessor redundancy, certified safety logic blocks, and Fail Safe over EtherCAT (FSoE) bus integration.", "badge": "New Release", "rel_path": "01-PRODUCT-MARKETING/robotics-safety/INDUS-EMAIL-031.html"}, {"id": "INDUS-EMAIL-032", "num": 32, "title": "Compact 270\u00b0 Safety Laser Scanners for Hazard Zones", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "robotics-safety", "subcategory_title": "Robotics Safety Systems", "audience": "Mobile Robotics Engineers, Plant Safety Officers, Machine Guarding Specialists", "objective": "Present compact 270\u00b0 optical safety laser scanners featuring dynamic protective field switching for mobile and stationary robotics.", "subject": "Dynamic Protection: INDUS 270\u00b0 Compact Safety Laser Scanners", "preview": "8.4-meter safety radius, 128 switchable field sets, and Type 3 / SIL2 / PLd functional safety for AMRs and workcells.", "badge": "Solutions Guide", "rel_path": "01-PRODUCT-MARKETING/robotics-safety/INDUS-EMAIL-032.html"}, {"id": "INDUS-EMAIL-033", "num": 33, "title": "Type 4 Safety Light Curtains & Comprehensive Failsafe Systems", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "robotics-safety", "subcategory_title": "Robotics Safety Systems", "audience": "Workcell Safety Managers, Packaging Line Integrators, Stamping Press Engineers", "objective": "Introduce Type 4 industrial safety light curtains with integrated muting, blanking, and slim IP67 aluminum housings.", "subject": "Failsafe Access Protection: INDUS Type 4 Safety Light Curtains", "preview": "14 mm finger and 30 mm hand resolution, integrated muting logic, and ultra-slim IP67 housings for press and robotic cells.", "badge": "New Release", "rel_path": "01-PRODUCT-MARKETING/robotics-safety/INDUS-EMAIL-033.html"}, {"id": "INDUS-EMAIL-034", "num": 34, "title": "Rugged Fanless Industrial IPC & Edge AI Gateways for Smart Factories", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "edge-computing-networking", "subcategory_title": "Edge Computing & Industrial Networking", "audience": "Smart Factory Directors, OT Infrastructure Leads, Edge Software Developers", "objective": "Introduce fanless, DIN-rail mounted industrial PCs and Edge AI compute gateways with Intel Core/Xeon processors and GPU acceleration.", "subject": "Rugged Edge Intelligence: INDUS Fanless Industrial IPCs & AI Gateways", "preview": "Fanless wide-temp design (-40\u00b0C to +70\u00b0C), dual isolated power inputs, and integrated GPU inference for smart factories.", "badge": "New Release", "rel_path": "01-PRODUCT-MARKETING/edge-computing-networking/INDUS-EMAIL-034.html"}, {"id": "INDUS-EMAIL-035", "num": 35, "title": "Deterministic PROFINET IRT & OPC UA TSN Industrial Networking Solutions", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "edge-computing-networking", "subcategory_title": "Edge Computing & Industrial Networking", "audience": "Network Architects, Automation Integration Leads, Enterprise IT/OT Specialists", "objective": "Present deterministic industrial communication switches and gateways supporting PROFINET IRT, EtherNet/IP, and OPC UA TSN.", "subject": "Deterministic Convergence: INDUS PROFINET IRT & OPC UA TSN Gateways", "preview": "Sub-microsecond deterministic bridging, Time-Sensitive Networking (TSN), and seamless OT-to-IT data convergence.", "badge": "Solutions Guide", "rel_path": "01-PRODUCT-MARKETING/edge-computing-networking/INDUS-EMAIL-035.html"}, {"id": "INDUS-EMAIL-036", "num": 36, "title": "Connected Edge Computing for Real-Time Robot Telemetry & Fleet Analytics", "category": "01-PRODUCT-MARKETING", "category_title": "Product Marketing", "subcategory": "edge-computing-networking", "subcategory_title": "Edge Computing & Industrial Networking", "audience": "Digital Transformation Leads, Plant Operations Directors, Maintenance Architects", "objective": "Demonstrate edge software frameworks for streaming high-frequency joint telemetry, thermal metrics, and motor currents to dashboards.", "subject": "Real-Time Telemetry: INDUS Edge IoT Framework for Robotics Fleets", "preview": "1 kHz joint metric streaming, automated edge anomaly detection, and out-of-the-box MQTT / InfluxDB integration.", "badge": "Technical Guide", "rel_path": "01-PRODUCT-MARKETING/edge-computing-networking/INDUS-EMAIL-036.html"}, {"id": "INDUS-EMAIL-037", "num": 37, "title": "Application Engineering Service Introduction", "category": "02-ENGINEERING-SERVICES", "category_title": "Engineering Services", "subcategory": "application-engineering", "subcategory_title": "Application Engineering & Feasibility", "audience": "Automation Project Managers, Machine Builders, Manufacturing Engineers", "objective": "Introduce comprehensive application engineering services covering kinematic reach, payload verification, and cycle-time simulation.", "subject": "Engineering Advisory: INDUS Application Engineering & Kinematic Feasibility", "preview": "Avoid costly sizing errors with 3D kinematic reach analysis, payload inertia modeling, and deterministic cycle-time audits.", "badge": "Service Introduction", "rel_path": "02-ENGINEERING-SERVICES/application-engineering/INDUS-EMAIL-037.html"}, {"id": "INDUS-EMAIL-038", "num": 38, "title": "Engineering Feasibility Consultation Invitation", "category": "02-ENGINEERING-SERVICES", "category_title": "Engineering Services", "subcategory": "application-engineering", "subcategory_title": "Application Engineering & Feasibility", "audience": "Operations Directors, Automation Leads, Continuous Improvement Managers", "objective": "Invite engineering leadership to a 1-on-1 feasibility consultation to audit robotic cycle times and eliminate production bottlenecks.", "subject": "Invitation: 1-on-1 Robotic Application Feasibility & Cycle-Time Audit", "preview": "Schedule a dedicated working session with INDUS Senior Application Architects to resolve production bottlenecks.", "badge": "Consultation Invitation", "rel_path": "02-ENGINEERING-SERVICES/application-engineering/INDUS-EMAIL-038.html"}, {"id": "INDUS-EMAIL-039", "num": 39, "title": "Case Study: Automotive CNC Machine Tending Cycle-Time Optimization", "category": "02-ENGINEERING-SERVICES", "category_title": "Engineering Services", "subcategory": "application-engineering", "subcategory_title": "Application Engineering & Feasibility", "audience": "Automotive Production Managers, CNC Machine Shop Directors, Automation Integrators", "objective": "Share a verified case study detailing how INDUS application engineering reduced CNC loading cycle time by 32% for a powertrain tier-1 supplier.", "subject": "Case Study: 32% Cycle-Time Reduction in Automotive Powertrain CNC Tending", "preview": "See how INDUS kinematic trajectory optimization and dual-gripper sizing unlocked 32% faster machine tending.", "badge": "Case Study", "rel_path": "02-ENGINEERING-SERVICES/application-engineering/INDUS-EMAIL-039.html"}, {"id": "INDUS-EMAIL-040", "num": 40, "title": "Kinematic Subsystems & Joint Actuator Sizing Service Introduction", "category": "02-ENGINEERING-SERVICES", "category_title": "Engineering Services", "subcategory": "joint-actuator-sizing", "subcategory_title": "Kinematic Subsystems & Joint Actuator Sizing", "audience": "Robotics Machine Builders, Joint Actuator Designers, Subsystem Engineers", "objective": "Introduce specialized engineering services for modular robot joint actuators, frameless motor matching, and bearing selection.", "subject": "Custom Actuator Engineering: Modular Robot Joint Sizing & Integration", "preview": "Seamlessly match frameless BLDC motors, strain-wave reducers, hollow encoders, and crossed roller bearings.", "badge": "Service Introduction", "rel_path": "02-ENGINEERING-SERVICES/joint-actuator-sizing/INDUS-EMAIL-040.html"}, {"id": "INDUS-EMAIL-041", "num": 41, "title": "Joint Actuator Engineering Review Invitation", "category": "02-ENGINEERING-SERVICES", "category_title": "Engineering Services", "subcategory": "joint-actuator-sizing", "subcategory_title": "Kinematic Subsystems & Joint Actuator Sizing", "audience": "Chief Mechanical Engineers, Robotics Hardware Directors, R&D Managers", "objective": "Invite engineering teams to an in-depth joint actuator review to examine thermal profiles, inertia ratios, and bearing margins.", "subject": "Invitation: Custom Joint Actuator Thermal & Inertia Sizing Review", "preview": "Review your joint torque curves, motor thermal rise, and bearing fatigue life with INDUS actuator architects.", "badge": "Review Invitation", "rel_path": "02-ENGINEERING-SERVICES/joint-actuator-sizing/INDUS-EMAIL-041.html"}, {"id": "INDUS-EMAIL-042", "num": 42, "title": "Technical Problem-Solving: Optimizing High-Inertia Robot Joints", "category": "02-ENGINEERING-SERVICES", "category_title": "Engineering Services", "subcategory": "joint-actuator-sizing", "subcategory_title": "Kinematic Subsystems & Joint Actuator Sizing", "audience": "Robotics Controls Specialists, Drive Integration Engineers, Mechanism Designers", "objective": "Technical problem-solving guide detailing how proper inertia matching and dual-loop feedback eliminate oscillation in high-inertia joints.", "subject": "Engineering Guide: Eliminating Resonance & Inertia Mismatch in Robot Joints", "preview": "How to manage high load-to-motor inertia ratios (> 20:1) and achieve crisp settling with dual-loop encoder architectures.", "badge": "Technical Whitepaper", "rel_path": "02-ENGINEERING-SERVICES/joint-actuator-sizing/INDUS-EMAIL-042.html"}, {"id": "INDUS-EMAIL-043", "num": 43, "title": "Turnkey Robotic Workcell Design & Integration Services Overview", "category": "02-ENGINEERING-SERVICES", "category_title": "Engineering Services", "subcategory": "workcell-integration", "subcategory_title": "Robotic Workcell Integration", "audience": "Plant Operations Directors, Manufacturing Engineering Managers, Factory Planners", "objective": "Introduce comprehensive turnkey robotic workcell integration services from concept simulation to on-site commissioning.", "subject": "Turnkey Automation: INDUS Complete Robotic Workcell Integration Services", "preview": "From 3D layout simulation and custom tooling design to on-site PLC programming and CE/OSHA safety commissioning.", "badge": "Service Introduction", "rel_path": "02-ENGINEERING-SERVICES/workcell-integration/INDUS-EMAIL-043.html"}, {"id": "INDUS-EMAIL-044", "num": 44, "title": "Factory Automation Workcell Planning Invitation", "category": "02-ENGINEERING-SERVICES", "category_title": "Engineering Services", "subcategory": "workcell-integration", "subcategory_title": "Robotic Workcell Integration", "audience": "Plant Managers, Facilities Directors, Capital Project Engineers", "objective": "Invite plant leadership to a virtual or on-site workcell planning workshop to define floor layouts, utility routing, and OEE targets.", "subject": "Invitation: Robotic Workcell Layout & Capacity Planning Workshop", "preview": "Collaborate with INDUS integration architects to design your next automated workcell layout and optimize floor space.", "badge": "Planning Workshop", "rel_path": "02-ENGINEERING-SERVICES/workcell-integration/INDUS-EMAIL-044.html"}, {"id": "INDUS-EMAIL-045", "num": 45, "title": "Case Study: High-Mix Robotic Palletizing with Zero-Downtime Product Changeovers", "category": "02-ENGINEERING-SERVICES", "category_title": "Engineering Services", "subcategory": "workcell-integration", "subcategory_title": "Robotic Workcell Integration", "audience": "Packaging Operations Directors, Logistics Managers, CPG Automation Engineers", "objective": "Detail a case study showing how INDUS designed and integrated an intelligent multi-line robotic palletizing cell handling 48 SKU variants with instant recipe changeovers.", "subject": "Case Study: Zero-Downtime High-Mix Palletizing Across 48 Packaging SKUs", "preview": "Learn how INDUS integrated an intelligent robotic palletizer handling 48 SKU variants with instant software recipe changeovers.", "badge": "Case Study", "rel_path": "02-ENGINEERING-SERVICES/workcell-integration/INDUS-EMAIL-045.html"}, {"id": "INDUS-EMAIL-046", "num": 46, "title": "Advanced Motion Control & Multi-Axis Trajectory Optimization Services", "category": "02-ENGINEERING-SERVICES", "category_title": "Engineering Services", "subcategory": "motion-control", "subcategory_title": "Motion Control & Trajectory Optimization", "audience": "Robotics Controls Engineers, Motion Specialists, High-Speed Machinery Builders", "objective": "Introduce advanced motion control consulting services focused on multi-axis S-curve profiling, jerk suppression, and path optimization.", "subject": "Motion Optimization: INDUS Advanced Multi-Axis Trajectory Tuning Services", "preview": "Slash cycle times and eliminate structural jerk with advanced frequency-domain tuning and kinematic trajectory smoothing.", "badge": "Service Introduction", "rel_path": "02-ENGINEERING-SERVICES/motion-control/INDUS-EMAIL-046.html"}, {"id": "INDUS-EMAIL-047", "num": 47, "title": "Motion Performance Audit Invitation", "category": "02-ENGINEERING-SERVICES", "category_title": "Engineering Services", "subcategory": "motion-control", "subcategory_title": "Motion Control & Trajectory Optimization", "audience": "Lead Automation Engineers, Machine Tool Specialists, Controls Architects", "objective": "Invite technical teams to a remote or on-site motion performance audit to measure servo lag error, jitter, and settling times.", "subject": "Invitation: Robotic Motion Performance & Vibration Analysis Audit", "preview": "Measure dynamic lag errors, mechanical resonance frequencies, and settling times with INDUS motion specialists.", "badge": "Audit Invitation", "rel_path": "02-ENGINEERING-SERVICES/motion-control/INDUS-EMAIL-047.html"}, {"id": "INDUS-EMAIL-048", "num": 48, "title": "Case Study: Achieving Sub-Micron Repeatability in Wafer Inspection Stages", "category": "02-ENGINEERING-SERVICES", "category_title": "Engineering Services", "subcategory": "motion-control", "subcategory_title": "Motion Control & Trajectory Optimization", "audience": "Semiconductor Tool Leads, Metrology Equipment Designers, Optical Inspection Directors", "objective": "Case study on optimizing direct-drive motion stages for a semiconductor metrology manufacturer, reaching 0.05 \u00b5m in-position stability.", "subject": "Case Study: Sub-Micron In-Position Stability in Semiconductor Wafer Inspection", "preview": "How INDUS advanced notch filtering and feedforward algorithms achieved 0.05 \u00b5m settling stability on direct-drive granite stages.", "badge": "Case Study", "rel_path": "02-ENGINEERING-SERVICES/motion-control/INDUS-EMAIL-048.html"}, {"id": "INDUS-EMAIL-049", "num": 49, "title": "Industrial Robotics Safety Compliance & ISO 10218/13849 Certification Services", "category": "02-ENGINEERING-SERVICES", "category_title": "Engineering Services", "subcategory": "safety-compliance", "subcategory_title": "Safety Compliance & Risk Assessment", "audience": "EHS Managers, Safety Directors, Industrial Robotics Integrators", "objective": "Introduce comprehensive robotics functional safety compliance and CE/OSHA risk assessment services.", "subject": "Compliance Guaranteed: INDUS Robotics Safety & ISO 10218/13849 Certification", "preview": "Ensure zero-liability safety compliance with rigorous ISO 12100 risk assessments and ISO 13849-1 SISTEMA safety validations.", "badge": "Service Introduction", "rel_path": "02-ENGINEERING-SERVICES/safety-compliance/INDUS-EMAIL-049.html"}, {"id": "INDUS-EMAIL-050", "num": 50, "title": "Safety Risk Assessment Consultation Invitation", "category": "02-ENGINEERING-SERVICES", "category_title": "Engineering Services", "subcategory": "safety-compliance", "subcategory_title": "Safety Compliance & Risk Assessment", "audience": "Plant Safety Directors, Manufacturing Engineering Leads, Operations Officers", "objective": "Invite plant leadership to an on-site or virtual safety risk assessment consultation for collaborative and industrial robot workcells.", "subject": "Invitation: Robotic Workcell Safety Risk Assessment & ISO 10218 Audit", "preview": "Schedule a dedicated safety consultation with INDUS Certified Functional Safety Engineers to evaluate workcell guarding.", "badge": "Audit Invitation", "rel_path": "02-ENGINEERING-SERVICES/safety-compliance/INDUS-EMAIL-050.html"}, {"id": "INDUS-EMAIL-051", "num": 51, "title": "Technical Problem-Solving: Transitioning High-Speed Workcells to Cat 4 PLe Safety", "category": "02-ENGINEERING-SERVICES", "category_title": "Engineering Services", "subcategory": "safety-compliance", "subcategory_title": "Safety Compliance & Risk Assessment", "audience": "Controls Safety Engineers, Automation Architects, Systems Integrators", "objective": "Technical engineering guide detailing how to design Category 4 Performance Level e (PLe) safety circuits for high-speed multi-robot cells.", "subject": "Engineering Guide: Achieving Cat 4 PLe Safety in High-Speed Multi-Robot Cells", "preview": "Step-by-step methodology for dual-channel cross-monitoring, diagnostic coverage (DC), and SISTEMA validation.", "badge": "Technical Whitepaper", "rel_path": "02-ENGINEERING-SERVICES/safety-compliance/INDUS-EMAIL-051.html"}, {"id": "INDUS-EMAIL-052", "num": 52, "title": "Custom Robotics & Special Purpose Machine (SPM) Development Capabilities", "category": "02-ENGINEERING-SERVICES", "category_title": "Engineering Services", "subcategory": "custom-robotics-spm", "subcategory_title": "Custom Robotics & Special Purpose Machines", "audience": "Advanced Manufacturing Directors, R&D Heads, Special Machine Builders", "objective": "Introduce bespoke automation capabilities for developing non-standard robotic mechanisms, auxiliary axes, and special purpose machinery.", "subject": "Engineered for the Unique: INDUS Custom Robotics & Special Purpose Machines", "preview": "When standard off-the-shelf robots cannot meet your requirements: custom kinematics, 7th-axis linear rails, and bespoke SPM systems.", "badge": "Service Introduction", "rel_path": "02-ENGINEERING-SERVICES/custom-robotics-spm/INDUS-EMAIL-052.html"}, {"id": "INDUS-EMAIL-053", "num": 53, "title": "Custom Automation Engineering Consultation Invitation", "category": "02-ENGINEERING-SERVICES", "category_title": "Engineering Services", "subcategory": "custom-robotics-spm", "subcategory_title": "Custom Robotics & Special Purpose Machines", "audience": "Chief Technology Officers, R&D Directors, Advanced Manufacturing Leads", "objective": "Invite technical executives to an engineering consultation to explore custom automation mechanisms and bespoke machine architectures.", "subject": "Invitation: Custom Robotics Architecture & Bespoke Machine Scoping", "preview": "Discuss your non-standard automation requirements with INDUS Principal Mechanical & Kinematic Architects.", "badge": "Scoping Consultation", "rel_path": "02-ENGINEERING-SERVICES/custom-robotics-spm/INDUS-EMAIL-053.html"}, {"id": "INDUS-EMAIL-054", "num": 54, "title": "Case Study: 7-Axis Linear Rail and Articulated Robot for Heavy Aerospace Forgings", "category": "02-ENGINEERING-SERVICES", "category_title": "Engineering Services", "subcategory": "custom-robotics-spm", "subcategory_title": "Custom Robotics & Special Purpose Machines", "audience": "Aerospace Manufacturing Directors, Heavy Forging Engineers, Large-Scale Machining Leads", "objective": "Detailed case study showing how INDUS engineered a 24-meter synchronized 7th-axis linear track carrying a 500 kg robot for titanium aerospace forgings.", "subject": "Case Study: 24m 7-Axis Synchronized Linear Track for Aerospace Titanium Forgings", "preview": "How INDUS engineered a high-precision 24-meter 7th-axis robotic transfer rail with sub-0.05 mm repeatability under 8,500 kg gross payload.", "badge": "Case Study", "rel_path": "02-ENGINEERING-SERVICES/custom-robotics-spm/INDUS-EMAIL-054.html"}, {"id": "INDUS-EMAIL-055", "num": 55, "title": "Lifecycle Optimization & IoT Predictive Maintenance Services Introduction", "category": "02-ENGINEERING-SERVICES", "category_title": "Engineering Services", "subcategory": "predictive-maintenance", "subcategory_title": "Lifecycle Optimization & Predictive Maintenance", "audience": "Plant Maintenance Directors, Reliability Engineers, Asset Managers", "objective": "Introduce comprehensive predictive maintenance and lifecycle optimization services for industrial robotics fleets.", "subject": "Predict, Don't React: INDUS Robotics Predictive Maintenance & Lifecycle Optimization", "preview": "Eliminate catastrophic gearhead and motor failures with continuous vibration telemetry, lubricant health tracking, and edge AI diagnostics.", "badge": "Service Introduction", "rel_path": "02-ENGINEERING-SERVICES/predictive-maintenance/INDUS-EMAIL-055.html"}, {"id": "INDUS-EMAIL-056", "num": 56, "title": "Plant Health Assessment Invitation: Vibration & Thermal Trend Analysis", "category": "02-ENGINEERING-SERVICES", "category_title": "Engineering Services", "subcategory": "predictive-maintenance", "subcategory_title": "Lifecycle Optimization & Predictive Maintenance", "audience": "Plant Reliability Managers, Maintenance Superintendents, Operations Directors", "objective": "Invite plant leadership to schedule an on-site robotic health baseline assessment to map vibration signatures across active lines.", "subject": "Invitation: Plant-Wide Robotic Fleet Health & Vibration Baseline Audit", "preview": "Capture baseline vibration signatures and identify hidden wear across your active robotics fleet with INDUS reliability specialists.", "badge": "Audit Invitation", "rel_path": "02-ENGINEERING-SERVICES/predictive-maintenance/INDUS-EMAIL-056.html"}, {"id": "INDUS-EMAIL-057", "num": 57, "title": "Field Performance Case Study: Preventing Unscheduled Reducer Failure via Continuous Telemetry", "category": "02-ENGINEERING-SERVICES", "category_title": "Engineering Services", "subcategory": "predictive-maintenance", "subcategory_title": "Lifecycle Optimization & Predictive Maintenance", "audience": "Maintenance Leads, Automotive Production Managers, Stamping Plant Directors", "objective": "Case study showing how INDUS IoT predictive maintenance detected anomalous vibration in an automotive welding robot 6 weeks before failure, preventing $180,000 in downtime.", "subject": "Case Study: Preventing $180,000 in Unscheduled Downtime in Automotive Welding", "preview": "How INDUS predictive vibration analytics detected cycloidal pin spalling 6 weeks early, enabling a scheduled 3-hour weekend swap.", "badge": "Case Study", "rel_path": "02-ENGINEERING-SERVICES/predictive-maintenance/INDUS-EMAIL-057.html"}, {"id": "INDUS-EMAIL-058", "num": 58, "title": "Discover the INDUS Application Finder: Match Your Engineering Requirements in Minutes", "category": "03-DIGITAL-TOOLS", "category_title": "Digital Tools", "subcategory": "application-finder", "subcategory_title": "Application Finder", "audience": "Mechanical Designers, Automation Engineers, System Sizing Specialists", "objective": "Introduce the online INDUS Application Finder tool for fast guided engineering discovery and kinematic component selection.", "subject": "Streamline Sizing: Discover the INDUS Application Finder Tool", "preview": "Select the right precision reducers, robot manipulators, and actuators in minutes with our interactive guided sizing tool.", "badge": "Tool Launch", "rel_path": "03-DIGITAL-TOOLS/application-finder/INDUS-EMAIL-058.html"}, {"id": "INDUS-EMAIL-059", "num": 59, "title": "Guided Application Discovery: Accelerate Your Robot & Reducer Sizing Workflow", "category": "03-DIGITAL-TOOLS", "category_title": "Digital Tools", "subcategory": "application-finder", "subcategory_title": "Application Finder", "audience": "Lead Robotics Engineers, Sizing Specialists, System Integrators", "objective": "Walk engineering teams through a 3-minute sizing workflow using the INDUS Application Finder to select and verify a robotic drive package.", "subject": "Tutorial: Size Precision Reducers & Robot Arms in Under 3 Minutes", "preview": "Step-by-step workflow guide on using the INDUS Application Finder to calculate torque margins and download native CAD models.", "badge": "Workflow Guide", "rel_path": "03-DIGITAL-TOOLS/application-finder/INDUS-EMAIL-059.html"}, {"id": "INDUS-EMAIL-060", "num": 60, "title": "Introducing INDUS Motion Studio: Interactive 3D Kinematics & Workcell Simulation", "category": "03-DIGITAL-TOOLS", "category_title": "Digital Tools", "subcategory": "motion-studio", "subcategory_title": "INDUS Motion Studio & Robot Anatomy", "audience": "Automation System Integrators, Simulation Engineers, Robotics Developers", "objective": "Introduce INDUS Motion Studio, a browser-based 3D kinematic simulation environment for modeling workcells and cycle times.", "subject": "Simulate Before Building: Introducing INDUS Motion Studio (Browser 3D)", "preview": "Model 6-axis workcells, test reach clearance, and simulate cycle times directly in your browser with zero installation.", "badge": "Tool Launch", "rel_path": "03-DIGITAL-TOOLS/motion-studio/INDUS-EMAIL-060.html"}, {"id": "INDUS-EMAIL-061", "num": 61, "title": "Deep Dive into Interactive Robot Anatomy: Explore Multi-Axis Joint Stacks Online", "category": "03-DIGITAL-TOOLS", "category_title": "Digital Tools", "subcategory": "motion-studio", "subcategory_title": "INDUS Motion Studio & Robot Anatomy", "audience": "Mechanical Engineers, Robotics Students, Training Directors, Mechatronics Leads", "objective": "Showcase the Interactive Robot Anatomy module enabling users to dissect robotic joint mechanisms and inspect internal gearheads in 3D.", "subject": "Explore Robot Anatomy: Interactive 3D Joint Exploded Views Online", "preview": "Peel back the aluminum housings and inspect internal strain-wave reducers, frameless motors, and crossed roller bearings in 3D.", "badge": "Interactive Tool", "rel_path": "03-DIGITAL-TOOLS/motion-studio/INDUS-EMAIL-061.html"}, {"id": "INDUS-EMAIL-062", "num": 62, "title": "Calculate Your Exact Automation Payback with the INDUS Manufacturing ROI Calculator", "category": "03-DIGITAL-TOOLS", "category_title": "Digital Tools", "subcategory": "roi-calculator", "subcategory_title": "Manufacturing ROI Calculator", "audience": "Chief Financial Officers, Operations Executives, Capital Planning Managers", "objective": "Introduce the INDUS Manufacturing ROI Calculator for modeling CapEx payback, labor savings, and productivity returns.", "subject": "Quantify Automation Value: INDUS Manufacturing ROI Calculator", "preview": "Calculate exact payback periods, IRR, and annual operational savings across multi-shift robotics investments.", "badge": "Tool Launch", "rel_path": "03-DIGITAL-TOOLS/roi-calculator/INDUS-EMAIL-062.html"}, {"id": "INDUS-EMAIL-063", "num": 63, "title": "Financial Justification Guide: Modeling CapEx, Labor Savings & OEE Gains", "category": "03-DIGITAL-TOOLS", "category_title": "Digital Tools", "subcategory": "roi-calculator", "subcategory_title": "Manufacturing ROI Calculator", "audience": "Plant Operations Directors, Continuous Improvement Leads, Automation Champions", "objective": "Financial guide detailing how to calculate OEE gains, scrap reduction, and reduced rework to build an airtight executive business case.", "subject": "Executive Guide: Building an Airtight Financial Justification for Robotics", "preview": "How to capture hidden automation savings: scrap reduction, tooling longevity, and increased machine availability.", "badge": "Whitepaper", "rel_path": "03-DIGITAL-TOOLS/roi-calculator/INDUS-EMAIL-063.html"}, {"id": "INDUS-EMAIL-064", "num": 64, "title": "Instant Access: Download 3D STEP Models & Native CAD Files for 200+ Components", "category": "03-DIGITAL-TOOLS", "category_title": "Digital Tools", "subcategory": "cad-datasheets", "subcategory_title": "CAD & Technical Datasheet Repository", "audience": "Mechanical Design Engineers, CAD Drafters, Robotics Tooling Specialists", "objective": "Announce instant, un-gated access to 3D STEP models, 2D DXF drawings, and native CAD files for over 200 INDUS components.", "subject": "Instant CAD Access: 3D STEP & Native Models for 200+ INDUS Components", "preview": "No registration barriers: download verified 3D STEP models, 2D DXF drawings, and kinematic assemblies directly into your CAD workspace.", "badge": "Resource Launch", "rel_path": "03-DIGITAL-TOOLS/cad-datasheets/INDUS-EMAIL-064.html"}, {"id": "INDUS-EMAIL-065", "num": 65, "title": "Comprehensive Engineering Datasheet Library: Verified Torque, Speed & Thermal Curves", "category": "03-DIGITAL-TOOLS", "category_title": "Digital Tools", "subcategory": "cad-datasheets", "subcategory_title": "CAD & Technical Datasheet Repository", "audience": "Chief Engineers, Drive Specialists, Quality Assurance Leads", "objective": "Highlight the comprehensive engineering datasheet library containing verified continuous torque, speed, and thermal curves tested under DIN 3990.", "subject": "Technical Library: Verified Torque, Speed & Thermal Dissipation Curves", "preview": "Design with verified data: complete torque-speed operating maps, bearing L10h curves, and DIN 3990 stress ratings.", "badge": "Technical Release", "rel_path": "03-DIGITAL-TOOLS/cad-datasheets/INDUS-EMAIL-065.html"}, {"id": "INDUS-EMAIL-066", "num": 66, "title": "Flexible Industrial Robotics Rental & Leasing: Scale Automation Without Heavy CapEx", "category": "04-COMMERCIAL-OPPORTUNITIES", "category_title": "Commercial Opportunities", "subcategory": "rental-leasing", "subcategory_title": "Equipment Rental & Leasing", "audience": "Plant Managers, Financial Controllers, Operations Directors", "objective": "Introduce flexible short-term and long-term equipment rental and leasing programs allowing plants to automate without large upfront capital outlays.", "subject": "Capital Flexibility: Scale Automation Without Heavy CapEx via INDUS Leasing", "preview": "Preserve working capital: deploy 6-axis robots, cobots, and mobile AMRs with flexible monthly leasing and rental terms.", "badge": "Program Launch", "rel_path": "04-COMMERCIAL-OPPORTUNITIES/rental-leasing/INDUS-EMAIL-066.html"}, {"id": "INDUS-EMAIL-067", "num": 67, "title": "Robotics-as-a-Service (RaaS): OpEx-Based Automation for Seasonal Production Spikes", "category": "04-COMMERCIAL-OPPORTUNITIES", "category_title": "Commercial Opportunities", "subcategory": "rental-leasing", "subcategory_title": "Equipment Rental & Leasing", "audience": "Supply Chain Directors, E-Commerce Fulfillment Leads, Seasonal Plant Managers", "objective": "Present the Robotics-as-a-Service (RaaS) subscription model for handling seasonal peak volumes without long-term balance sheet liabilities.", "subject": "Agile Operations: Robotics-as-a-Service (RaaS) for Seasonal Production Peaks", "preview": "Scale capacity up during peak quarters and down during off-seasons with all-inclusive, per-pick or monthly RaaS subscriptions.", "badge": "Service Model", "rel_path": "04-COMMERCIAL-OPPORTUNITIES/rental-leasing/INDUS-EMAIL-067.html"}, {"id": "INDUS-EMAIL-068", "num": 68, "title": "Try-Before-You-Buy Robotics Leasing Programs for Fast Factory Trials", "category": "04-COMMERCIAL-OPPORTUNITIES", "category_title": "Commercial Opportunities", "subcategory": "rental-leasing", "subcategory_title": "Equipment Rental & Leasing", "audience": "Manufacturing Innovation Leads, Plant Engineers, Automation Skeptics", "objective": "Introduce a 90-day 'Try-Before-You-Buy' pilot program allowing plants to deploy and evaluate an INDUS cobot cell with zero purchase commitment.", "subject": "Risk-Free Pilot: 90-Day Try-Before-You-Buy Robotics Program", "preview": "Test an INDUS collaborative workcell on your factory floor for 90 days. If it meets your payback metrics, 100% of rental fees apply to purchase.", "badge": "Pilot Program", "rel_path": "04-COMMERCIAL-OPPORTUNITIES/rental-leasing/INDUS-EMAIL-068.html"}, {"id": "INDUS-EMAIL-069", "num": 69, "title": "Schedule a Dedicated 1-on-1 Engineering Consultation with INDUS Application Architects", "category": "04-COMMERCIAL-OPPORTUNITIES", "category_title": "Commercial Opportunities", "subcategory": "consultation", "subcategory_title": "Book a Consultation", "audience": "Plant Operations Directors, Lead Automation Engineers, Manufacturing Decision-Makers", "objective": "Direct invitation to book a technical consultation with INDUS application architects via our integrated calendar booking system.", "subject": "Schedule Your Session: 1-on-1 Engineering Consultation with INDUS Architects", "preview": "Book a dedicated technical session to size robotic kinematic subsystems, review CAD layouts, and optimize production throughput.", "badge": "Consultation Invitation", "rel_path": "04-COMMERCIAL-OPPORTUNITIES/consultation/INDUS-EMAIL-069.html"}, {"id": "INDUS-EMAIL-070", "num": 70, "title": "Live Technical Sizing Session: Sync Your Project with Our Senior Robotics Team", "category": "04-COMMERCIAL-OPPORTUNITIES", "category_title": "Commercial Opportunities", "subcategory": "consultation", "subcategory_title": "Book a Consultation", "audience": "Mechanical Engineers, Project Managers, Machine Builders", "objective": "Encourage engineering project managers to bring their live projects and CAD files to a collaborative sizing session.", "subject": "Live Sizing Session: Review Your Robotics Project with INDUS Application Engineers", "preview": "Bring your 3D CAD models and cycle-time targets: our application architects will calculate exact torque curves and reach envelopes live.", "badge": "Working Session", "rel_path": "04-COMMERCIAL-OPPORTUNITIES/consultation/INDUS-EMAIL-070.html"}, {"id": "INDUS-EMAIL-071", "num": 71, "title": "Post-Consultation Follow-Up & Custom Engineering Roadmap Delivery", "category": "04-COMMERCIAL-OPPORTUNITIES", "category_title": "Commercial Opportunities", "subcategory": "consultation", "subcategory_title": "Book a Consultation", "audience": "Consultation Attendees, Engineering Directors, Operations Managers", "objective": "Professional follow-up email following an engineering consultation, delivering the customized technical roadmap, sizing calculations, and next steps.", "subject": "Your Custom Automation Roadmap: Summary & Deliverables from Our Session", "preview": "Following our technical working session, please find attached your customized kinematic sizing report, 3D concept layout, and project roadmap.", "badge": "Roadmap Delivery", "rel_path": "04-COMMERCIAL-OPPORTUNITIES/consultation/INDUS-EMAIL-071.html"}, {"id": "INDUS-EMAIL-072", "num": 72, "title": "Turnkey Line Modernization: Retrofitting Legacy Machinery with Precision Robotics", "category": "04-COMMERCIAL-OPPORTUNITIES", "category_title": "Commercial Opportunities", "subcategory": "automation-upgrades", "subcategory_title": "Turnkey Automation Upgrades", "audience": "Plant Managers, Modernization Engineers, Capital Projects Leads", "objective": "Present turnkey automation upgrade packages that retrofit aging production lines with modern robotics and EtherCAT controls.", "subject": "Modernize Legacy Lines: Turnkey Robotic Retrofit Solutions by INDUS", "preview": "Extend the life of your existing machinery: add high-speed robotic tending, modern safety PLCs, and IoT telemetry without full line replacement.", "badge": "Modernization Guide", "rel_path": "04-COMMERCIAL-OPPORTUNITIES/automation-upgrades/INDUS-EMAIL-072.html"}, {"id": "INDUS-EMAIL-073", "num": 73, "title": "CNC & Machine Tool Automation Upgrade Guide: Boost Machine Utilization by 45%", "category": "04-COMMERCIAL-OPPORTUNITIES", "category_title": "Commercial Opportunities", "subcategory": "automation-upgrades", "subcategory_title": "Turnkey Automation Upgrades", "audience": "Machine Shop Owners, Precision Machining Directors, CNC Operations Managers", "objective": "Guide for precision machining facilities detailing how robotic tending retrofits unlock 45% higher spindle utilization and 'lights-out' shifts.", "subject": "Machining Guide: Unlock 45% Higher Spindle Utilization with Robotic Tending", "preview": "Eliminate operator-dependent spindle pauses: transition your CNC milling and turning centers to continuous lights-out production.", "badge": "Technical Guide", "rel_path": "04-COMMERCIAL-OPPORTUNITIES/automation-upgrades/INDUS-EMAIL-073.html"}, {"id": "INDUS-EMAIL-074", "num": 74, "title": "End-of-Life Robot Replacement Program: Seamless Drop-In Mechanical & Software Upgrades", "category": "04-COMMERCIAL-OPPORTUNITIES", "category_title": "Commercial Opportunities", "subcategory": "automation-upgrades", "subcategory_title": "Turnkey Automation Upgrades", "audience": "Plant Maintenance Superintendents, Automation Engineers, Sourcing Managers", "objective": "Introduce the INDUS End-of-Life Robot Replacement Program providing drop-in mechanical adapter plates and program translation for obsolete robots.", "subject": "Replace Obsolete Robots: INDUS Seamless Drop-In Mechanical & Software Upgrades", "preview": "Facing discontinued robot controller parts? Upgrade to INDUS 6-axis systems with custom adapter plates and zero foundation drilling.", "badge": "Program Release", "rel_path": "04-COMMERCIAL-OPPORTUNITIES/automation-upgrades/INDUS-EMAIL-074.html"}, {"id": "INDUS-EMAIL-075", "num": 75, "title": "Building an Executive-Ready Business Case for Factory Automation Investment", "category": "04-COMMERCIAL-OPPORTUNITIES", "category_title": "Commercial Opportunities", "subcategory": "roi-business-cases", "subcategory_title": "ROI and Business Case Development", "audience": "Manufacturing Directors, Continuous Improvement Managers, Project Champions", "objective": "Provide a strategic framework and executive presentation template for justifying robotics investments to internal capital committees.", "subject": "Secure CapEx Approval: Building an Executive-Ready Automation Business Case", "preview": "Win board approval for your robotics project with our proven financial modeling templates, risk matrices, and executive presentation deck.", "badge": "Strategic Guide", "rel_path": "04-COMMERCIAL-OPPORTUNITIES/roi-business-cases/INDUS-EMAIL-075.html"}, {"id": "INDUS-EMAIL-076", "num": 76, "title": "Customized Automation Cost Analysis & Payback Schedule for Your Facility", "category": "04-COMMERCIAL-OPPORTUNITIES", "category_title": "Commercial Opportunities", "subcategory": "roi-business-cases", "subcategory_title": "ROI and Business Case Development", "audience": "Plant Managers, Financial Controllers, Operations Analysts", "objective": "Offer a complimentary, customized financial cost analysis modeling your facility's exact labor rates, scrap costs, and payback schedules.", "subject": "Complimentary Audit: Custom Automation Cost Analysis & Payback Schedule", "preview": "Receive a customized financial model calculated around your plant's exact hourly labor rates, shift counts, and production volumes.", "badge": "Complimentary Offer", "rel_path": "04-COMMERCIAL-OPPORTUNITIES/roi-business-cases/INDUS-EMAIL-076.html"}, {"id": "INDUS-EMAIL-077", "num": 77, "title": "Post-Quotation Follow-Up: Reviewing Your Custom Automation Sizing & ROI Metrics", "category": "04-COMMERCIAL-OPPORTUNITIES", "category_title": "Commercial Opportunities", "subcategory": "roi-business-cases", "subcategory_title": "ROI and Business Case Development", "audience": "Quotation Recipients, Procurement Managers, Project Engineering Leads", "objective": "Professional commercial follow-up following a quotation submission, offering to review component trade-offs, lead times, and payment terms.", "subject": "Quotation Review: Navigating Your Sizing Results & Financial Metrics", "preview": "Following your recent formal quotation, our application engineering team is available to review component sizing, lead times, and terms.", "badge": "Quotation Follow-Up", "rel_path": "04-COMMERCIAL-OPPORTUNITIES/roi-business-cases/INDUS-EMAIL-077.html"}, {"id": "INDUS-EMAIL-078", "num": 78, "title": "INDUS Certified System Integrator Partner Program Invitation", "category": "05-PARTNERSHIPS-OEM", "category_title": "Partnerships & OEM", "subcategory": "system-integrators", "subcategory_title": "System Integrators", "audience": "Automation System Integrators, Robotics Engineering Firms, Workcell Builders", "objective": "Invite qualified industrial automation integrators to apply for the INDUS Certified System Integrator (CSI) Partner Program.", "subject": "Partner with INDUS: Certified System Integrator (CSI) Program Invitation", "preview": "Expand your project margins, gain priority hardware allocations, and receive qualified enterprise leads as an INDUS Certified Partner.", "badge": "Partner Program", "rel_path": "05-PARTNERSHIPS-OEM/system-integrators/INDUS-EMAIL-078.html"}, {"id": "INDUS-EMAIL-079", "num": 79, "title": "Technical Enablement & Margin Advantages for Authorized Robotics Integrators", "category": "05-PARTNERSHIPS-OEM", "category_title": "Partnerships & OEM", "subcategory": "system-integrators", "subcategory_title": "System Integrators", "audience": "Integrator Principals, Lead Automation Engineers, Estimating Managers", "objective": "Detail the specific margin structures, co-engineering resources, and technical training benefits available to authorized integrators.", "subject": "Integrator Advantages: Maximize Project Margins with INDUS Open Architecture", "preview": "Discover how INDUS open-architecture robot controllers and wholesale component pricing boost your project profitability.", "badge": "Technical Enablement", "rel_path": "05-PARTNERSHIPS-OEM/system-integrators/INDUS-EMAIL-079.html"}, {"id": "INDUS-EMAIL-080", "num": 80, "title": "Co-Marketing & Qualified Project Lead Sharing for Turnkey Automation Integrators", "category": "05-PARTNERSHIPS-OEM", "category_title": "Partnerships & OEM", "subcategory": "system-integrators", "subcategory_title": "System Integrators", "audience": "Integrator Business Development Leads, Marketing Managers, Managing Directors", "objective": "Outline joint co-marketing initiatives, exhibition co-sponsorships, and qualified enterprise lead distribution for partner integrators.", "subject": "Grow Together: Co-Marketing & Qualified Enterprise Lead Sharing with INDUS", "preview": "Access enterprise project inquiries from automotive, packaging, and aerospace manufacturers through the INDUS Partner Referral Network.", "badge": "Marketing Alliance", "rel_path": "05-PARTNERSHIPS-OEM/system-integrators/INDUS-EMAIL-080.html"}, {"id": "INDUS-EMAIL-081", "num": 81, "title": "Machine Builder (OEM) Partnership: High-Performance Kinematic Cores for Your Equipment", "category": "05-PARTNERSHIPS-OEM", "category_title": "Partnerships & OEM", "subcategory": "machine-builders", "subcategory_title": "Machine Builders", "audience": "Original Equipment Manufacturers (OEMs), Special Machine Builders, Engineering Directors", "objective": "Invite industrial machine builders to partner with INDUS to integrate precision gearboxes, actuators, and kinematics directly into their machinery.", "subject": "OEM Partnership: Integrate High-Performance Kinematic Cores into Your Machinery", "preview": "Elevate your machinery's precision and throughput with INDUS zero-backlash reducers, frameless torque motors, and modular joint actuators.", "badge": "OEM Partnership", "rel_path": "05-PARTNERSHIPS-OEM/machine-builders/INDUS-EMAIL-081.html"}, {"id": "INDUS-EMAIL-082", "num": 82, "title": "Open-Architecture Motion Control & Driver Integration for Custom Machinery", "category": "05-PARTNERSHIPS-OEM", "category_title": "Partnerships & OEM", "subcategory": "machine-builders", "subcategory_title": "Machine Builders", "audience": "Controls Directors, Chief Software Architects, OEM Electrical Engineers", "objective": "Showcase open-architecture EtherCAT drive integration allowing machine builders to embed INDUS kinematics into proprietary software.", "subject": "Open-Architecture Control: Embed INDUS Kinematics into Your Machinery Software", "preview": "Retain complete control over your user interface and proprietary algorithms with INDUS open EtherCAT and ROS 2 hardware interfaces.", "badge": "Technical Integration", "rel_path": "05-PARTNERSHIPS-OEM/machine-builders/INDUS-EMAIL-082.html"}, {"id": "INDUS-EMAIL-083", "num": 83, "title": "Dedicated Technical Support & Priority Spare Parts SLAs for Machine Builders", "category": "05-PARTNERSHIPS-OEM", "category_title": "Partnerships & OEM", "subcategory": "machine-builders", "subcategory_title": "Machine Builders", "audience": "Customer Support Directors, OEM Operations Managers, Field Service Leads", "objective": "Detail comprehensive OEM support agreements offering guaranteed spare parts availability, rapid replacement SLAs, and 24/7 technical hotline access.", "subject": "Global Reliability: Dedicated Technical Support & Priority Spare Parts SLAs for OEMs", "preview": "Protect your end-customers with guaranteed 24-hour spare parts dispatch and dedicated Tier-3 engineering escalations.", "badge": "Service Level Agreement", "rel_path": "05-PARTNERSHIPS-OEM/machine-builders/INDUS-EMAIL-083.html"}, {"id": "INDUS-EMAIL-084", "num": 84, "title": "OEM Strategic Component Sourcing: Volume Reducers, Motors & Actuators", "category": "05-PARTNERSHIPS-OEM", "category_title": "Partnerships & OEM", "subcategory": "oem-sourcing", "subcategory_title": "OEM Component Sourcing", "audience": "Procurement Directors, Strategic Sourcing Managers, Supply Chain Executives", "objective": "Introduce strategic volume sourcing agreements for precision gearboxes, frameless motors, and linear actuators with guaranteed cost savings.", "subject": "Strategic Sourcing: High-Volume Reducers, Motors & Actuators with INDUS", "preview": "Optimize your bill-of-materials with direct factory volume pricing on strain-wave gearheads, RV cycloidal reducers, and servo motors.", "badge": "Sourcing Announcement", "rel_path": "05-PARTNERSHIPS-OEM/oem-sourcing/INDUS-EMAIL-084.html"}, {"id": "INDUS-EMAIL-085", "num": 85, "title": "Tiered Volume Pricing Agreements & Guaranteed Lead Times for Serial Production", "category": "05-PARTNERSHIPS-OEM", "category_title": "Partnerships & OEM", "subcategory": "oem-sourcing", "subcategory_title": "OEM Component Sourcing", "audience": "Supply Chain Managers, Purchasing Directors, Serial Production Leads", "objective": "Detail predictable tiered pricing structures and guaranteed 2-to-4 week lead times backed by dedicated buffer inventory for volume customers.", "subject": "Supply Certainty: Tiered Volume Pricing & Guaranteed Lead Times with INDUS", "preview": "Lock in component pricing and eliminate production delays with contractual lead-time guarantees and dedicated inventory buffers.", "badge": "Commercial Agreement", "rel_path": "05-PARTNERSHIPS-OEM/oem-sourcing/INDUS-EMAIL-085.html"}, {"id": "INDUS-EMAIL-086", "num": 86, "title": "Supply Chain Resilience & Dual-Sourcing Assurance for Motion Subsystems", "category": "05-PARTNERSHIPS-OEM", "category_title": "Partnerships & OEM", "subcategory": "oem-sourcing", "subcategory_title": "OEM Component Sourcing", "audience": "Chief Procurement Officers, VP Supply Chain, Risk Management Directors", "objective": "Present INDUS dual-sourcing capabilities and robust supply chain resilience as an alternative to single-source component vulnerabilities.", "subject": "De-Risk Your Supply Chain: Dual-Sourcing Precision Kinematics with INDUS", "preview": "Protect your production from single-supplier geopolitical disruptions and factory allocations with INDUS dual-sourcing resilience.", "badge": "Risk Management", "rel_path": "05-PARTNERSHIPS-OEM/oem-sourcing/INDUS-EMAIL-086.html"}, {"id": "INDUS-EMAIL-087", "num": 87, "title": "Co-Engineering & Rapid Prototyping: Joint Development of Custom Motion Units", "category": "05-PARTNERSHIPS-OEM", "category_title": "Partnerships & OEM", "subcategory": "co-engineering", "subcategory_title": "Rapid Prototyping & Co-Engineering", "audience": "Chief Technology Officers, VP Engineering, Advanced R&D Managers", "objective": "Introduce collaborative co-engineering services where INDUS engineers partner with client teams to develop custom motion pods and prototypes.", "subject": "Co-Engineering Innovation: Develop Custom Motion Subsystems with INDUS R&D", "preview": "Accelerate development: partner directly with INDUS mechanical and drive specialists to co-engineer bespoke robotic actuators and mechanisms.", "badge": "Co-Engineering Program", "rel_path": "05-PARTNERSHIPS-OEM/co-engineering/INDUS-EMAIL-087.html"}, {"id": "INDUS-EMAIL-088", "num": 88, "title": "Collaborative Kinematic R&D: From Initial CAD Sizing to Working Prototype in 6 Weeks", "category": "05-PARTNERSHIPS-OEM", "category_title": "Partnerships & OEM", "subcategory": "co-engineering", "subcategory_title": "Rapid Prototyping & Co-Engineering", "audience": "R&D Directors, Product Development Managers, Innovation Program Leads", "objective": "Walk through a proven 6-week fast-track prototyping framework taking a custom kinematic mechanism from initial CAD concept to dyno-tested hardware.", "subject": "Fast-Track R&D: From Initial CAD Concept to Tested Prototype in 6 Weeks", "preview": "Discover the proven INDUS 6-week rapid prototyping methodology for specialized robotic joint actuators and custom mechanisms.", "badge": "Prototyping Framework", "rel_path": "05-PARTNERSHIPS-OEM/co-engineering/INDUS-EMAIL-088.html"}, {"id": "INDUS-EMAIL-089", "num": 89, "title": "Career Opportunity: Senior Industrial Robotics Design Engineer (Kinematics)", "category": "06-CAREERS-TALENT", "category_title": "Careers & Talent", "subcategory": "robotics-engineering", "subcategory_title": "Robotics Engineering", "audience": "Senior Robotics Engineers, Manipulator Designers, Mechatronics Specialists", "objective": "Announce an open senior engineering role for designing high-performance industrial robot arms, hollow-wrist kinematics, and multi-axis mechanisms.", "subject": "Career Opening: Senior Industrial Robotics Design Engineer at INDUS", "preview": "Join the INDUS engineering team: design next-generation 6-axis industrial robots, hollow wrists, and high-stiffness kinematic structures.", "badge": "We Are Hiring", "rel_path": "06-CAREERS-TALENT/robotics-engineering/INDUS-EMAIL-089.html"}, {"id": "INDUS-EMAIL-090", "num": 90, "title": "Candidate Application Acknowledged: Next Steps in Engineering Review", "category": "06-CAREERS-TALENT", "category_title": "Careers & Talent", "subcategory": "robotics-engineering", "subcategory_title": "Robotics Engineering", "audience": "Robotics Engineering Job Applicants, Candidate Pool", "objective": "Professional acknowledgement email confirming receipt of candidate resume and detailing the technical review timeline.", "subject": "Application Received: Senior Industrial Robotics Design Engineer at INDUS", "preview": "Thank you for submitting your profile to INDUS Industrial Robotics. Our engineering directors are reviewing your credentials.", "badge": "Application Received", "rel_path": "06-CAREERS-TALENT/robotics-engineering/INDUS-EMAIL-090.html"}, {"id": "INDUS-EMAIL-091", "num": 91, "title": "Career Opportunity: Senior Motion Control & Servo Drive Algorithms Engineer", "category": "06-CAREERS-TALENT", "category_title": "Careers & Talent", "subcategory": "motion-control", "subcategory_title": "Motion Control & Drives", "audience": "Motion Control Engineers, DSP Firmware Developers, Servo Drive Specialists", "objective": "Announce an open senior engineering position for developing high-bandwidth servo algorithms, active vibration filters, and DSP firmware.", "subject": "Career Opening: Senior Motion Control & Servo Drive Algorithms Engineer", "preview": "Develop real-time current loops, observer-based feedforward algorithms, and EtherCAT motion kernels at INDUS Robotics.", "badge": "We Are Hiring", "rel_path": "06-CAREERS-TALENT/motion-control/INDUS-EMAIL-091.html"}, {"id": "INDUS-EMAIL-092", "num": 92, "title": "Interview Invitation: Senior Motion Control Engineer Discussion", "category": "06-CAREERS-TALENT", "category_title": "Careers & Talent", "subcategory": "motion-control", "subcategory_title": "Motion Control & Drives", "audience": "Shortlisted Candidates, Motion Control Specialists", "objective": "Formal interview invitation for shortlisted candidates to participate in a technical discussion with INDUS Principal Motion Architects.", "subject": "Interview Invitation: Senior Motion Control Engineer Position at INDUS", "preview": "Congratulations: your profile has been shortlisted. We invite you to a technical discussion with INDUS Principal Motion Architects.", "badge": "Interview Invitation", "rel_path": "06-CAREERS-TALENT/motion-control/INDUS-EMAIL-092.html"}, {"id": "INDUS-EMAIL-093", "num": 93, "title": "Career Opportunity: Senior Mechanical & Precision Gear Design Engineer", "category": "06-CAREERS-TALENT", "category_title": "Careers & Talent", "subcategory": "mechanical-design", "subcategory_title": "Mechanical & Gear Design", "audience": "Gear Designers, Mechanical FEA Specialists, Tribology Engineers", "objective": "Announce an open senior engineering position focused on precision strain-wave tooth profiles, cycloidal geometry, and gear tribology.", "subject": "Career Opening: Senior Mechanical & Precision Gear Design Engineer", "preview": "Design zero-backlash strain-wave tooth geometries, cycloidal pin mechanisms, and high-fatigue flexsplines at INDUS.", "badge": "We Are Hiring", "rel_path": "06-CAREERS-TALENT/mechanical-design/INDUS-EMAIL-093.html"}, {"id": "INDUS-EMAIL-094", "num": 94, "title": "Application Acknowledgment: Precision Mechanical Engineering Role", "category": "06-CAREERS-TALENT", "category_title": "Careers & Talent", "subcategory": "mechanical-design", "subcategory_title": "Mechanical & Gear Design", "audience": "Mechanical Engineering Candidates, Gear Designers", "objective": "Professional application confirmation email detailing INDUS mechanical engineering philosophy and hiring review milestones.", "subject": "Application Received: Senior Mechanical & Precision Gear Design Engineer", "preview": "We have received your application for the Senior Gear Design Engineer role. Our mechanical engineering leadership is reviewing your credentials.", "badge": "Application Received", "rel_path": "06-CAREERS-TALENT/mechanical-design/INDUS-EMAIL-094.html"}, {"id": "INDUS-EMAIL-095", "num": 95, "title": "Career Opportunity: Embedded Linux & ROS 2 Robotics Software Architect", "category": "06-CAREERS-TALENT", "category_title": "Careers & Talent", "subcategory": "embedded-ros", "subcategory_title": "Embedded Systems & ROS", "audience": "Embedded Software Engineers, ROS 2 Developers, Real-Time Linux Architects", "objective": "Announce an open senior software engineering role for architecting real-time Linux kernels, ROS 2 hardware interfaces, and EtherCAT master stacks.", "subject": "Career Opening: Embedded Linux & ROS 2 Robotics Software Architect", "preview": "Lead the development of hard real-time PREEMPT_RT Linux kernels, certified ros2_control drivers, and multi-robot middleware at INDUS.", "badge": "We Are Hiring", "rel_path": "06-CAREERS-TALENT/embedded-ros/INDUS-EMAIL-095.html"}, {"id": "INDUS-EMAIL-096", "num": 96, "title": "Technical Assessment & Interview Stage: Embedded Systems & ROS 2 Role", "category": "06-CAREERS-TALENT", "category_title": "Careers & Talent", "subcategory": "embedded-ros", "subcategory_title": "Embedded Systems & ROS", "audience": "Shortlisted Software Candidates, ROS 2 Engineers", "objective": "Technical interview stage invitation detailing the real-time software discussion, code walkthrough, and architectural evaluation.", "subject": "Interview Stage: Embedded Linux & ROS 2 Technical Architecture Discussion", "preview": "Congratulations: your profile has advanced to the technical architecture stage with INDUS Principal Software Architects.", "badge": "Interview Invitation", "rel_path": "06-CAREERS-TALENT/embedded-ros/INDUS-EMAIL-096.html"}, {"id": "INDUS-EMAIL-097", "num": 97, "title": "Career Opportunity: Senior PLC Automation & Fieldbus Commissioning Engineer", "category": "06-CAREERS-TALENT", "category_title": "Careers & Talent", "subcategory": "industrial-automation", "subcategory_title": "Industrial Automation / PLC", "audience": "PLC Controls Engineers, Automation Commissioning Leads, Systems Integrators", "objective": "Announce an open senior role for programming industrial PLC systems (Siemens TIA Portal, Rockwell Studio 5000) and commissioning robotic workcells.", "subject": "Career Opening: Senior PLC Automation & Fieldbus Commissioning Engineer", "preview": "Lead industrial workcell commissioning: program Siemens TIA Portal, Rockwell Studio 5000, and Beckhoff TwinCAT systems at INDUS.", "badge": "We Are Hiring", "rel_path": "06-CAREERS-TALENT/industrial-automation/INDUS-EMAIL-097.html"}, {"id": "INDUS-EMAIL-098", "num": 98, "title": "Interview Invitation & Technical Discussion: Industrial Automation Lead", "category": "06-CAREERS-TALENT", "category_title": "Careers & Talent", "subcategory": "industrial-automation", "subcategory_title": "Industrial Automation / PLC", "audience": "Shortlisted PLC Controls Candidates, Automation Leads", "objective": "Interview stage invitation for shortlisted PLC candidates to discuss industrial fieldbuses, safety logic, and commissioning experience.", "subject": "Interview Invitation: Senior PLC Automation Engineer Position at INDUS", "preview": "Congratulations: your controls and commissioning background has been shortlisted. We invite you to an interview with our Systems Integration Directorate.", "badge": "Interview Invitation", "rel_path": "06-CAREERS-TALENT/industrial-automation/INDUS-EMAIL-098.html"}, {"id": "INDUS-EMAIL-099", "num": 99, "title": "Career Opportunity: Quality Assurance & CMM Precision Metrology Engineer", "category": "06-CAREERS-TALENT", "category_title": "Careers & Talent", "subcategory": "manufacturing-quality", "subcategory_title": "Manufacturing & Quality QA", "audience": "Metrology Engineers, Quality Assurance Specialists, CMM Programmers", "objective": "Announce an open engineering role for leading coordinate measuring machine (CMM) programming, GD&T inspection, and ISO 9001 quality audits.", "subject": "Career Opening: Quality Assurance & CMM Precision Metrology Engineer", "preview": "Lead precision metrology at INDUS: program Zeiss CMMs, conduct ISO 9283 robot pose testing, and uphold ISO 9001:2015 quality standards.", "badge": "We Are Hiring", "rel_path": "06-CAREERS-TALENT/manufacturing-quality/INDUS-EMAIL-099.html"}, {"id": "INDUS-EMAIL-100", "num": 100, "title": "Career Opportunity: Technical Sales & Application Solutions Architect", "category": "06-CAREERS-TALENT", "category_title": "Careers & Talent", "subcategory": "technical-sales", "subcategory_title": "Technical Sales", "audience": "Technical Sales Engineers, Application Architects, Pre-Sales Robotics Specialists", "objective": "Announce an open senior role bridging engineering depth with commercial consultative sales for enterprise robotics clients.", "subject": "Career Opening: Technical Sales & Application Solutions Architect at INDUS", "preview": "Bridge engineering rigor with commercial strategy: lead pre-sales feasibility sizing and technical proposals for enterprise accounts.", "badge": "We Are Hiring", "rel_path": "06-CAREERS-TALENT/technical-sales/INDUS-EMAIL-100.html"}];
+
+    let activeCategory = "all";
+    let activeAudience = "all";
+    let activeSearch = "";
+    let activeSort = "id-asc";
+    let activeTemplate = null;
+
+    const templatesGrid = document.getElementById("templatesGrid");
+    const resultsCount = document.getElementById("resultsCount");
+    const searchInput = document.getElementById("searchInput");
+    const audienceFilter = document.getElementById("audienceFilter");
+    const sortSelect = document.getElementById("sortSelect");
+    const categoryPills = document.getElementById("categoryPills");
+    const previewModal = document.getElementById("previewModal");
+    const previewFrame = document.getElementById("previewFrame");
+    const frameContainer = document.getElementById("frameContainer");
+
+    function renderCards() {
+      let filtered = TEMPLATES_DATA.filter(item => {
+        if (activeCategory !== "all" && item.category !== activeCategory) return false;
+        if (activeAudience !== "all" && !item.audience.toLowerCase().includes(activeAudience.toLowerCase())) return false;
+        if (activeSearch) {
+          const q = activeSearch.toLowerCase();
+          const match = item.id.toLowerCase().includes(q) ||
+                        item.title.toLowerCase().includes(q) ||
+                        item.subject.toLowerCase().includes(q) ||
+                        item.objective.toLowerCase().includes(q) ||
+                        item.subcategory_title.toLowerCase().includes(q);
+          if (!match) return false;
+        }
+        return true;
+      });
+
+      // Sorting
+      if (activeSort === "id-asc") {
+        filtered.sort((a,b) => a.num - b.num);
+      } else if (activeSort === "id-desc") {
+        filtered.sort((a,b) => b.num - a.num);
+      } else if (activeSort === "title-asc") {
+        filtered.sort((a,b) => a.title.localeCompare(b.title));
+      } else if (activeSort === "category") {
+        filtered.sort((a,b) => a.category.localeCompare(b.category));
+      }
+
+      resultsCount.textContent = `Showing ${filtered.length} of ${TEMPLATES_DATA.length} templates`;
+
+      templatesGrid.innerHTML = filtered.map(t => `
+        <div class="template-card">
+          <div>
+            <div class="card-meta">
+              <span class="card-id">${t.id}</span>
+              <span class="card-category-tag">${t.subcategory_title}</span>
+            </div>
+            <h3 class="card-title">${t.title}</h3>
+            <div class="card-subject">
+              <span>Subject:</span> "${t.subject}"
+            </div>
+            <p class="card-obj">${t.objective}</p>
+            <div class="card-audience">
+              <strong>Audience:</strong> ${t.audience}
+            </div>
+          </div>
+          <div class="card-actions">
+            <button class="btn btn-primary" onclick="openPreview('${t.id}')">
+              👁 Preview
+            </button>
+            <a href="${t.rel_path}" target="_blank" class="btn btn-outline" title="Open standalone HTML file">
+              Open File ↗
+            </a>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    // Event listeners
+    searchInput.addEventListener("input", (e) => {
+      activeSearch = e.target.value.trim();
+      renderCards();
+    });
+
+    audienceFilter.addEventListener("change", (e) => {
+      activeAudience = e.target.value;
+      renderCards();
+    });
+
+    sortSelect.addEventListener("change", (e) => {
+      activeSort = e.target.value;
+      renderCards();
+    });
+
+    categoryPills.addEventListener("click", (e) => {
+      if (e.target.classList.contains("pill-btn")) {
+        document.querySelectorAll(".pill-btn").forEach(p => p.classList.remove("active"));
+        e.target.classList.add("active");
+        activeCategory = e.target.getAttribute("data-cat");
+        renderCards();
+      }
+    });
+
+    // Modal Preview Handlers
+    function openPreview(id) {
+      const item = TEMPLATES_DATA.find(t => t.id === id);
+      if (!item) return;
+      activeTemplate = item;
+
+      document.getElementById("modalTitle").textContent = item.title;
+      document.getElementById("modalSub").textContent = `${item.id} • ${item.category_title} > ${item.subcategory_title}`;
+      document.getElementById("modalOpenTabLink").href = item.rel_path;
+
+      previewFrame.src = item.rel_path;
+      previewModal.classList.add("open");
+    }
+
+    function closeModal() {
+      previewModal.classList.remove("open");
+      previewFrame.src = "";
+      activeTemplate = null;
+    }
+
+    previewModal.addEventListener("click", (e) => {
+      if (e.target === previewModal) closeModal();
+    });
+
+    function setPreviewMode(mode) {
+      document.getElementById("btnDesktopView").classList.toggle("active", mode === "desktop");
+      document.getElementById("btnMobileView").classList.toggle("active", mode === "mobile");
+      frameContainer.classList.toggle("mobile-mode", mode === "mobile");
+    }
+
+    function copySubject() {
+      if (!activeTemplate) return;
+      navigator.clipboard.writeText(activeTemplate.subject);
+      flashButton("btnCopySubject", "✓ Copied Subject!");
+    }
+
+    function copyPreview() {
+      if (!activeTemplate) return;
+      navigator.clipboard.writeText(activeTemplate.preview);
+      flashButton("btnCopyPreview", "✓ Copied Preview!");
+    }
+
+    async function copyFullHtml() {
+      if (!activeTemplate) return;
+      try {
+        const response = await fetch(activeTemplate.rel_path);
+        const text = await response.text();
+        await navigator.clipboard.writeText(text);
+        flashButton("btnCopyHtml", "✓ Copied HTML!");
+      } catch (err) {
+        alert("Unable to copy HTML automatically. Please use 'Open in New Tab' and view source.");
+      }
+    }
+
+    function printPreview() {
+      if (previewFrame.contentWindow) {
+        previewFrame.contentWindow.focus();
+        previewFrame.contentWindow.print();
+      }
+    }
+
+    function flashButton(btnId, text) {
+      const btn = document.getElementById(btnId);
+      const originalText = btn.textContent;
+      btn.textContent = text;
+      btn.classList.add("copied");
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.classList.remove("copied");
+      }, 2000);
+    }
+
+    // Initial load
+    renderCards();
+  </script>
+</body>
+</html>
